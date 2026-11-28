@@ -1,0 +1,112 @@
+{
+ "about": "The files that make this version's picture and sound. The digest is the SHA-256 of the lines '<sha256>  <path>\\n' in this order. A review signs this digest.",
+ "production": "agile-history",
+ "version": "v0.6-vertical",
+ "digest": "e2bdb72cc4847ebe74c3e87b044c4dcdfc6d527355bdc18cba2b2a8f284cc3b5",
+ "files": [
+  {
+   "path": "assets/player.js",
+   "sha256": "90dc1cf28b7d8b4ff28297b45e0a2f58c2a4f443d76d032406ff8f382fae0012"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/scenes.json",
+   "sha256": "f833a36a19150ce22e338288eb7b6ec4103b686e0f962fe1489584c25a272c26"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/01-hook.mp3",
+   "sha256": "1386a12525aff63ece1ffa05ad852a3d9213b0e27e615264f2304e4e6b2827c8"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/02-roots.mp3",
+   "sha256": "c8672d0dc9b6e6b50f2b28deb3f0bcb72cb8b23fef0abf572dffa6073e4fe19a"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/03-royce.mp3",
+   "sha256": "d556ae0a99c773c570b8af8bf646ae08d4b9d868ade71dedb207fb3873c08d31"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/04-methods.mp3",
+   "sha256": "c952a8ee3b8ae581751299ad00ed3f29f8c8f284b4cf55f9b71efa684cd31aa5"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/05-snowbird.mp3",
+   "sha256": "995f657839005c450bc9ddedd1356e2e5e2f40c683f95ff4c860625ed946c20a"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/06-the-word.mp3",
+   "sha256": "965ef35388171cdc9733bd264bf8f097c76f58c33a2b867a6fc79b174f3f2fa8"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/07-values.mp3",
+   "sha256": "59d4090738982596c6c88f4f1216e61c14b1d6608ba6691549050a59906fd849"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/08-spread.mp3",
+   "sha256": "180e7ea9b4b189cf78729df5db91a69bc549d20de6565ffb9fdc3fb8d6485242"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/09-industry.mp3",
+   "sha256": "4f68e28e2c3e7cab5110ff7b9b4cc1849ec792026e17419e393331aa205448c4"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/10-thomas.mp3",
+   "sha256": "1fb730f69a2ac115cd1e33120ac0d520c4ea7f83cc26ac2982f1575005405704"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/11-fowler.mp3",
+   "sha256": "13909c3652820f7f32a2429ccf03e6dba3ca04b3cf10fccf6eca5447051e843a"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/12-jeffries.mp3",
+   "sha256": "6aca2a79bca33454c0e6ce4864e5023f11b46978c141b071e5f754de16f552f2"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/13-but.mp3",
+   "sha256": "77d78762f10f395b48f59a9483340a084b5808de4aabbd22b93cc7a8d2a6274d"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/14-now.mp3",
+   "sha256": "efe40ab372d9e41099550ae50ee4eccfe87d8efb40231505c8887e19bd5eb1fd"
+  },
+  {
+   "path": "agile-history/v0.6-vertical/audio/15-credits.mp3",
+   "sha256": "da0b61738c0d4e28cb4a8e6df64f2f54e483f2dc27483e8f7779af96f4d12165"
+  },
+  {
+   "path": "assets/brand/sws-wordmark-navy.svg",
+   "sha256": "2e1c35a0e917d21ff9f5e0b21ffee2b67981ef745a0dc80c23c0398bc1d7ee57"
+  },
+  {
+   "path": "lab/agile-trailer/scene.js",
+   "sha256": "5be684c0863d07bf72ce79bf857eb2ab5a44d5097cda89255849b0340db10cc0"
+  },
+  {
+   "path": "lab/badge-factory/scene.js",
+   "sha256": "05d3f5f4ffb2bbad29f1acb8344d4179deca443e534fa8d2852faaf3cb5e6d11"
+  },
+  {
+   "path": "lab/currents-portrait/scene.js",
+   "sha256": "fdb94e8619627ff54970d33cf859787643b1a65aa89cdff3c392c573c688fe79"
+  },
+  {
+   "path": "lab/royce-cascade-portrait/scene.js",
+   "sha256": "cb6169d7d5860d9ae78ccd165a6ec7edcdedfb87f0679ec4ca00aa61e8e69163"
+  },
+  {
+   "path": "lab/snowbird-page/scene.js",
+   "sha256": "727d49f1de872789a3fd17adb5d1f99d221338e2134572f9e3e5c1c4047902d1"
+  },
+  {
+   "path": "lab/spread/scene.js",
+   "sha256": "7e4ca3a2da614c36096fbb54df5b1759c1ad6efa1647bff28cc50fb7f4ec4a0e"
+  },
+  {
+   "path": "lab/voices/scene.js",
+   "sha256": "67bf2593564abbecf6d6e33346656e3222b60e0db9484382d54535b140f73f68"
+  },
+  {
+   "path": "assets/vendor/three-0.187.0/three.module.min.js",
+   "sha256": "e0df03ddbddcf65926df5b79a04724d1a05af235d6af8b4113767f9107a8c233"
+  }
+ ]
+}

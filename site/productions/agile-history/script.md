@@ -1,4 +1,4 @@
-# The story of Agile: script, v0.5-vertical
+# The story of Agile: script, v0.6-vertical
 
 1. **hook** (8 s): Seventeen people. One page. Then an industry. This is the history of Agile, in about three minutes.
 2. **roots** (18 s): It did not begin in 2001. Larman and Basili trace iterative development back to the nineteen thirties, to short improvement cycles at Bell Labs. One programmer later recalled doing incremental development as early as 1957. Then, in 1970, came Winston Royce's paper.

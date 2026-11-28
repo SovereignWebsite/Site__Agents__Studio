@@ -45,3 +45,8 @@ c.conductor starts sessions and holds claims. c.maestro was handed over on 28 No
 - The lane's agent side (drain, reply, grant): `_build/lane_agent.py`. It holds no secret, only paths.
 - A chart can be drawn straight from data in `build.py` (see `refresh_chart` and `cell_html`): cheaper than a scene, and Dinis asked for the analysis first.
 - A key file can only be published in a commit that adds `site/keys/<name>.json` and nothing else, and a name already taken blocks its successor: the old session must retire its own key file first (done on 28 Nov, to `site/keys/retired/`).
+
+## Posting vertical films (learnt 28 Nov 2026, the first refresh film on Instagram and LinkedIn)
+- The platforms draw their own buttons, name and caption over the bottom fifth of the frame, and LinkedIn trims the sides. Words near the bottom get cut.
+- For any film going to social media, set "safe_area": {"scale": 0.82, "top": 0.04, "captions": 0.76} in scenes.json: the picture is drawn a little smaller from the top, the words on screen sit at 76% of the height, the source line leaves the frame (the sources are on the page) and the label sits above the words. Pair it with captions_in_frame and brand_corner.
+- Dinis records the film himself on his iPad with Record and send: that is the hand-over and his choice of the exact version. Do not render here unless he asks.

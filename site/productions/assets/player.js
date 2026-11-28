@@ -127,7 +127,7 @@ function drawText(c, L, P, sc, tl, d, still, meta) {
   // words on screen as they are spoken (captions_in_frame), so the film works without sound: the sentence being
   // said, the word being said in the accent colour, the words still to come dimmed. Timing is shared out by length
   // over the scene's spoken span, the same way as the transcript's cues below the player.
-  if (P.captions_in_frame && sc.narration && !still) {
+  if (P.captions_in_frame && sc.narration && !still && !(P.safe_area && sc.kind === 'credits')) { // credits are their own words
     const lead = sc.lead ?? 0.25, span = Math.max(0.5, d - lead - (sc.tail ?? 0.5)), pr = clamp((tl - lead) / span);
     const sents = (sc.narration.match(/[^.!?]+[.!?]+["\u201d]?|[^.!?]+$/g) || [sc.narration]).map((x) => x.trim()), total = sents.reduce((n, x) => n + x.length, 0) || 1;
     let at = pr * total, k = 0; while (k < sents.length - 1 && at > sents[k].length) { at -= sents[k].length; k++; }
@@ -137,7 +137,7 @@ function drawText(c, L, P, sc, tl, d, still, meta) {
     words.forEach((w, j) => { const ww = c.measureText(w).width; if (lw && lw + sp + ww > maxW) { lines.push([]); lw = 0; } lines[lines.length - 1].push([w, j, ww]); lw += (lw ? sp : 0) + ww; });
     // at most two lines on screen: a long sentence is shown two lines at a time, the pair that holds the word being said
     if (lines.length > 2) { const r = Math.max(0, lines.findIndex((ln) => ln.some((x) => x[1] === Math.max(0, cur)))); lines = lines.slice(Math.floor(r / 2) * 2, Math.floor(r / 2) * 2 + 2); }
-    const pillHere = logo && P.brand_corner && (!P.label_end_only || meta.i === meta.n - 1), yb = H - (pillHere ? 17.8 : 14.2) * U, y0 = yb - (lines.length - 1) * lh;
+    const pillHere = logo && P.brand_corner && (!P.label_end_only || meta.i === meta.n - 1), yb = P.safe_area ? H * (P.safe_area.captions || 0.76) : H - (pillHere ? 17.8 : 14.2) * U, y0 = yb - (lines.length - 1) * lh;
     c.save(); c.shadowBlur = 0; c.globalAlpha = 0.62; c.fillStyle = '#060a12'; c.fillRect(0, y0 - lh * 0.72, W, lines.length * lh + lh * 0.44); c.restore();
     c.textAlign = 'left'; c.shadowBlur = 2 * U;
     lines.forEach((ln, r) => { const lt = ln.reduce((a, x) => a + x[2], 0) + sp * (ln.length - 1); let x = cx - lt / 2; for (const [w, j, ww] of ln) { c.globalAlpha = j <= cur ? 1 : 0.48; c.fillStyle = j === cur ? T.accent : T.ink; c.fillText(w, x, y0 + r * lh); x += ww + sp; } });
@@ -149,9 +149,9 @@ function drawText(c, L, P, sc, tl, d, still, meta) {
   // bottom lines, in every frame: the scene's sources and the label
   c.globalAlpha = 1; font(2.15, 500);
   const pillUp = logo && P.brand_corner && (!P.label_end_only || meta.i === meta.n - 1); // the label rises over the source line, clear of the corner logo
-  if (sc.source_line && !pillUp) { const s = wrap('Source: ' + sc.source_line, maxW)[0]; c.fillStyle = T.dim; c.textAlign = 'center'; c.fillText(s, cx, H - 9.4 * U); }
+  if (sc.source_line && !pillUp && !P.safe_area) { const s = wrap('Source: ' + sc.source_line, maxW)[0]; c.fillStyle = T.dim; c.textAlign = 'center'; c.fillText(s, cx, H - 9.4 * U); }
   // the label: on every frame, or (label_end_only) only on the last scene, where the credits say it
-  if (!P.label_end_only || meta.i === meta.n - 1) {   font(2.45, 700); const lw = c.measureText(P.label).width + 5 * U, lhh = 4.6 * U; c.shadowBlur = 0; c.fillStyle = 'rgba(0,0,0,.62)'; c.beginPath(); c.roundRect(cx - lw / 2, (pillUp ? H - 11.2 * U : H - 6.9 * U), lw, lhh, lhh / 2); c.fill();   c.fillStyle = '#ffffff'; c.textAlign = 'center'; c.fillText(P.label, cx, (pillUp ? H - 11.2 * U : H - 6.9 * U) + lhh / 2 + 0.1 * U); }
+  if (!P.label_end_only || meta.i === meta.n - 1) {   font(2.45, 700); const lw = c.measureText(P.label).width + 5 * U, lhh = 4.6 * U; c.shadowBlur = 0; c.fillStyle = 'rgba(0,0,0,.62)'; c.beginPath(); c.roundRect(cx - lw / 2, (P.safe_area ? (sc.kind === 'credits' ? H * (P.safe_area.captions || 0.76) - 2.3 * U : H * (P.safe_area.captions || 0.76) - 14 * U) : pillUp ? H - 11.2 * U : H - 6.9 * U), lw, lhh, lhh / 2); c.fill();   c.fillStyle = '#ffffff'; c.textAlign = 'center'; c.fillText(P.label, cx, (P.safe_area ? (sc.kind === 'credits' ? H * (P.safe_area.captions || 0.76) - 2.3 * U : H * (P.safe_area.captions || 0.76) - 14 * U) : pillUp ? H - 11.2 * U : H - 6.9 * U) + lhh / 2 + 0.1 * U); }
 }
 function drawCam(c, L, cam) {
   const v = cam.video; if (!v || v.readyState < 2) return; const { W, H, U, M } = L, vw = v.videoWidth, vh = v.videoHeight; c.save(); c.shadowBlur = 0; c.globalAlpha = 1;
@@ -162,6 +162,8 @@ function drawCam(c, L, cam) {
 
 // ---- WebGL
 const VS_Q = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
+// the component picture's quad can be scaled and moved (safe_area), so platform overlays do not cover it
+const VS_C = 'attribute vec2 p;varying vec2 v;uniform vec4 r;void main(){v=p*.5+.5;gl_Position=vec4(p*r.xy+r.zw,0.,1.);}';
 const FS_BG = 'precision mediump float;varying vec2 v;uniform vec3 a,b;void main(){float d=distance(v,vec2(.5,.45));vec3 c=mix(b,a,smoothstep(0.,1.,v.y));c*=1.-.55*d*d;gl_FragColor=vec4(c,1.);}';
 const FS_TX = 'precision mediump float;varying vec2 v;uniform sampler2D t;void main(){gl_FragColor=texture2D(t,vec2(v.x,1.-v.y));}';
 const VS_P = 'attribute vec4 q;attribute float al;uniform float asp,sc;varying float h,A;void main(){h=q.w;A=al;gl_Position=vec4(q.x/asp,q.y,0.,1.);gl_PointSize=q.z*sc;}';
@@ -177,15 +179,15 @@ export async function mount(root) {
   const gl = canvas.getContext('webgl', { alpha: false, antialias: false, premultipliedAlpha: false });
   const text = document.createElement('canvas'), tc = text.getContext('2d');
   let L, pos = 0, playing = false, raf = 0, clock0 = 0, pos0 = 0, cam = null, onEnd = null, stopAt = 0, lastScene = -1;
-  let pq, pb, pp, qbuf, pbuf, abuf, tex; const data = new Float32Array(N * 4), alpha = new Float32Array(N), o = { x: 0, y: 0, s: 1, h: 0, al: 0 }, o2 = { x: 0, y: 0, s: 1, h: 0, al: 0 }, sd = [0, 0, 0, 0];
+  let pq, pc, pb, pp, qbuf, pbuf, abuf, tex; const data = new Float32Array(N * 4), alpha = new Float32Array(N), o = { x: 0, y: 0, s: 1, h: 0, al: 0 }, o2 = { x: 0, y: 0, s: 1, h: 0, al: 0 }, sd = [0, 0, 0, 0];
   if (gl) {
-    pq = program(gl, VS_Q, FS_TX); pb = program(gl, VS_Q, FS_BG); pp = program(gl, VS_P, FS_P);
+    pq = program(gl, VS_Q, FS_TX); pc = program(gl, VS_C, FS_TX); pb = program(gl, VS_Q, FS_BG); pp = program(gl, VS_P, FS_P);
     qbuf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, qbuf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
     pbuf = gl.createBuffer(); abuf = gl.createBuffer(); tex = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, tex);
     for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE], [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE]]) gl.texParameteri(gl.TEXTURE_2D, k, v);
     gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
   } else say('This browser has no WebGL: the transcript below has the whole story.');
-  function size(w, h) { canvas.width = text.width = w; canvas.height = text.height = h; L = layout(w, h); root.classList.toggle('portrait', h > w); if (gl) gl.viewport(0, 0, w, h); }
+  function size(w, h) { canvas.width = text.width = w; canvas.height = text.height = h; L = layout(w, h); if (P.safe_area) L.yB = Math.min(L.yB, h * (P.safe_area.captions || 0.76) - 6 * L.U); root.classList.toggle('portrait', h > w); if (gl) gl.viewport(0, 0, w, h); }
   size(P.format?.w || 1280, P.format?.h || 720);
   for (const u of [P.brand_logo, ...scenes.map((x) => x.mark)].filter(Boolean)) { if (IMGS[u]) continue; try { const im = new Image(); im.src = u; await im.decode(); IMGS[u] = im; } catch { /* drawn without it */ } }
   // scene components (built in the lab): each draws into its own canvas, which this player lays under the words
@@ -232,7 +234,8 @@ export async function mount(root) {
       gl.uniform3fv(gl.getUniformLocation(pb, 'a'), hex(T.bg1)); gl.uniform3fv(gl.getUniformLocation(pb, 'b'), hex(T.bg2)); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       if (comp && !(cam && cam.mode === 'full')) {
         const sp = sc.span || [0, comp.seconds]; comp.scene.render(still ? sp[1] : sp[0] + clamp(tl / d) * (sp[1] - sp[0]), L.W, L.H);
-        gl.useProgram(pq); a = gl.getAttribLocation(pq, 'p'); gl.enableVertexAttribArray(a); gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
+        gl.useProgram(pc); a = gl.getAttribLocation(pc, 'p'); gl.enableVertexAttribArray(a); gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
+        { const sa = P.safe_area, k = sa ? (sa.scale || 0.82) : 1, top = sa ? 1 - 2 * (sa.top ?? 0.04) : 1; gl.uniform4f(gl.getUniformLocation(pc, 'r'), k, k, 0, top - k); }
         gl.bindTexture(gl.TEXTURE_2D, ctex); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, comp.canvas); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); gl.bindTexture(gl.TEXTURE_2D, tex);
       }
       gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE); gl.useProgram(pp);

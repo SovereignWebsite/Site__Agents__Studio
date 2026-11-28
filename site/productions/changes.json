@@ -4,6 +4,12 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agent__Studio/commits/dev/site/productions",
  "changes": [
   {
+   "commit": "96d95d5",
+   "date_utc": "2026-11-28 18:22",
+   "what": "Record and send: also send a recording saved earlier",
+   "detail": "On his iPad the first recording showed no send box, likely because the browser still held the previous player for\nup to ten minutes. Under the player there is now 'Or send a recording you saved', which opens the same send box for\na file picked from the device."
+  },
+  {
    "commit": "536ad52",
    "date_utc": "2026-11-28 18:08",
    "what": "Record and send: record a film in your own browser and send it with SG/Send",
@@ -356,12 +362,6 @@
    "date_utc": "2026-11-28 12:50",
    "what": "Productions build: stop tracking Python's bytecode cache",
    "detail": ""
-  },
-  {
-   "commit": "9fb22f7",
-   "date_utc": "2026-11-28 12:50",
-   "what": "How we refresh a session v0.6: the Sovereign Website logo; briefs for a plate and a music bed",
-   "detail": "- The logo Dinis Cruz chose (B, SWS, by design.c, CC BY 4.0) is copied into assets/brand/ with its source and\n  licence. The player draws a production's brand_logo at the top of every scene and a title scene's mark.\n- The player can show the AI label only on the last scene (label_end_only), as asked for the Agile film.\n- v0.6: logo on every scene and on the cover; Dinis named, as he agreed; the team scene adds the reviewers, the\n  logo's designer and the lead's change of model.\n- session-refresh/briefs.json: what account B's Higgsfield and ElevenLabs agents need (still, music bed, exact\n  length, sync points, loudness, delivery to their own vault), with the owner's words on use.\n- Reviews page: b.maestro's review, as summarised by c.maestro. player.js changed: self-check reviews re-signed."
   }
  ]
 }

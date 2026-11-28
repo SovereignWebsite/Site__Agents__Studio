@@ -1,0 +1,774 @@
+{
+ "id": "agile-history",
+ "version": "v0.6-vertical",
+ "title": "The story of Agile",
+ "theme": "ink",
+ "format": {
+  "w": 720,
+  "h": 1280
+ },
+ "label": "Voice made by AI · no presenter · every beat sourced",
+ "label_end_only": true,
+ "voice": {
+  "made_by_ai": true,
+  "provider": "Mistral",
+  "model": "voxtral-mini-tts-3",
+  "voice": "voice_3150 (James, a stock preset)",
+  "speed": 1.25
+ },
+ "from": {
+  "what": "c.history's browser story, redone with WebGL scenes",
+  "page": "https://agile.history.sovereignweb.site/story/",
+  "data": "https://agile.history.sovereignweb.site/data/video.json",
+  "facts": "https://agile.history.sovereignweb.site/data/facts.json"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "kind": "component",
+   "component": "agile-trailer",
+   "span": [
+    0,
+    7.79
+   ],
+   "seconds": 7.79,
+   "title": "Seventeen people. One page. Then an industry.",
+   "narration": "Seventeen people. One page. Then an industry. This is the history of Agile, in about three minutes.",
+   "sources": [
+    {
+     "fact": "manifesto-seventeen-signatories",
+     "claim": "The Manifesto carries seventeen names.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#manifesto-seventeen-signatories",
+     "title": "Manifesto for Agile Software Development",
+     "url": "https://agilemanifesto.org/",
+     "publisher": "agilemanifesto.org"
+    },
+    {
+     "fact": "jeffries-agile-big-business",
+     "claim": "Jeffries wrote that \"Agile\" had become big business, led by the Scrum Alliance's Certified ScrumMaster offering, with many coaches, trainers and competing frameworks.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#jeffries-agile-big-business",
+     "title": "Developers Should Abandon Agile",
+     "url": "https://ronjeffries.com/articles/018-01ff/abandon-1/",
+     "publisher": "ronjeffries.com"
+    }
+   ],
+   "source_line": "agilemanifesto.org · ronjeffries.com",
+   "audio": "audio/01-hook.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "Seventeen people. One page. Then an industry. The history of Agile, in about three minutes. Behind the words, six of the film's own scenes play as previews."
+  },
+  {
+   "id": "roots",
+   "kind": "component",
+   "seconds": 18.14,
+   "title": "It did not begin in 2001",
+   "items": [
+    {
+     "year": "1930s",
+     "text": "Short improvement cycles"
+    },
+    {
+     "year": "1957",
+     "text": "Incremental software, as later recalled"
+    },
+    {
+     "year": "1970",
+     "text": "Royce's paper"
+    }
+   ],
+   "narration": "It did not begin in 2001. Larman and Basili trace iterative development back to the nineteen thirties, to short improvement cycles at Bell Labs. One programmer later recalled doing incremental development as early as 1957. Then, in 1970, came Winston Royce's paper.",
+   "sources": [
+    {
+     "fact": "iid-roots-shewhart-1930s",
+     "claim": "Larman and Basili trace iterative and incremental development (IID) back to the 1930s work of Walter Shewhart at Bell Labs.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#iid-roots-shewhart-1930s",
+     "title": "Iterative and Incremental Development: A Brief History",
+     "url": "https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf",
+     "publisher": "IEEE Computer (copy hosted by craiglarman.com)"
+    },
+    {
+     "fact": "incremental-development-1957",
+     "claim": "Gerald Weinberg recalled, in a personal communication quoted by Larman and Basili, that his team was doing incremental development as early as 1957 in Los Angeles.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#incremental-development-1957",
+     "title": "Iterative and Incremental Development: A Brief History",
+     "url": "https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf",
+     "publisher": "IEEE Computer (copy hosted by craiglarman.com)"
+    },
+    {
+     "fact": "royce-1970-do-it-twice",
+     "claim": "Royce recommended that a program developed for the first time be built twice, so that the version delivered to the customer is in effect the second one.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#royce-1970-do-it-twice",
+     "title": "Managing the Development of Large Software Systems",
+     "url": "https://www.praxisframework.org/files/royce1970.pdf",
+     "publisher": "IEEE WESCON (copy hosted by praxisframework.org)"
+    }
+   ],
+   "source_line": "craiglarman.com · praxisframework.org",
+   "audio": "audio/02-roots.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "1930s: Short improvement cycles; 1957: Incremental software, as later recalled; 1970: Royce's paper",
+   "was_kind": "years",
+   "component": "currents-portrait",
+   "span": [
+    0,
+    17
+   ]
+  },
+  {
+   "id": "royce",
+   "kind": "component",
+   "seconds": 11.35,
+   "title": "Blamed for the waterfall",
+   "quotes": [
+    {
+     "quote": "I believe in this concept, but the implementation described above is risky and invites failure.",
+     "by": "Winston Royce, 1970"
+    }
+   ],
+   "narration": "Blamed for the waterfall. Yet of that simple sequence of phases, Royce himself wrote: I believe in this concept, but the implementation described above is risky and invites failure.",
+   "sources": [
+    {
+     "fact": "royce-1970-risky",
+     "claim": "In his 1970 paper Winston Royce drew the simple sequence of phases, said he believed in the concept, and then called that implementation risky and failure-prone.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#royce-1970-risky",
+     "title": "Managing the Development of Large Software Systems",
+     "url": "https://www.praxisframework.org/files/royce1970.pdf",
+     "publisher": "IEEE WESCON (copy hosted by praxisframework.org)"
+    }
+   ],
+   "source_line": "praxisframework.org",
+   "audio": "audio/03-royce.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“I believe in this concept, but the implementation described above is risky and invites failure.” (Winston Royce, 1970)",
+   "was_kind": "quote",
+   "component": "royce-cascade-portrait",
+   "span": [
+    0,
+    12
+   ]
+  },
+  {
+   "id": "methods",
+   "kind": "component",
+   "seconds": 17.77,
+   "title": "The 1990s: lightweight methods",
+   "items": [
+    {
+     "year": "1994",
+     "text": "DSDM"
+    },
+    {
+     "year": "1995",
+     "text": "Scrum"
+    },
+    {
+     "year": "1996",
+     "text": "Extreme Programming"
+    },
+    {
+     "year": "1998",
+     "text": "Crystal"
+    },
+    {
+     "year": "1999",
+     "text": "Feature-Driven Development"
+    }
+   ],
+   "narration": "The nineteen nineties brought lightweight methods. DSDM, in 1994. Scrum, first presented in 1995. Extreme Programming, from 1996. Crystal, 1998. Feature-Driven Development, 1999. Lightweight was a label nobody really liked.",
+   "say": "The nineteen nineties brought lightweight methods. D.S.D.M., in 1994. Scrum, first presented in 1995. Extreme Programming, from 1996. Crystal, 1998. Feature-Driven Development, 1999. Lightweight was a label nobody really liked.",
+   "sources": [
+    {
+     "fact": "dsdm-rad-1994",
+     "claim": "In January 1994 sixteen rapid application development practitioners met in the UK, drawing on James Martin's RAD teaching, and their process definition became the Dynamic Systems Development Method (DSDM).",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#dsdm-rad-1994",
+     "title": "Iterative and Incremental Development: A Brief History",
+     "url": "https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf",
+     "publisher": "IEEE Computer (copy hosted by craiglarman.com)"
+    },
+    {
+     "fact": "scrum-oopsla-1995",
+     "claim": "Ken Schwaber and Jeff Sutherland say they developed Scrum in the early 1990s and first presented it together at the OOPSLA conference in 1995.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#scrum-oopsla-1995",
+     "title": "The Scrum Guide (2020)",
+     "url": "https://scrumguides.org/scrum-guide.html",
+     "publisher": "scrumguides.org"
+    },
+    {
+     "fact": "xp-c3-1996",
+     "claim": "Fowler, who consulted on the Chrysler C3 payroll project, wrote that it was restarted under Kent Beck's lead in 1996 and first brought together the practices that became Extreme Programming.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#xp-c3-1996",
+     "title": "C3",
+     "url": "https://martinfowler.com/bliki/C3.html",
+     "publisher": "martinfowler.com"
+    },
+    {
+     "fact": "crystal-cockburn-1998",
+     "claim": "Alistair Cockburn says he designed the Crystal family of methodologies while working at the Central Bank of Norway, where he helped deliver a project in 1998.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#crystal-cockburn-1998",
+     "title": "Dr. Alistair Cockburn (biography)",
+     "url": "https://alistaircockburn.com/Bio",
+     "publisher": "alistaircockburn.com"
+    },
+    {
+     "fact": "fdd-1999",
+     "claim": "Feature-Driven Development was published in 1999 as a chapter by Peter Coad and others in Java Modeling in Color with UML.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#fdd-1999",
+     "title": "Iterative and Incremental Development: A Brief History",
+     "url": "https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf",
+     "publisher": "IEEE Computer (copy hosted by craiglarman.com)"
+    },
+    {
+     "fact": "lightweight-label-2000",
+     "claim": "During 2000 the methods were grouped in articles as \"Light\" or \"Lightweight\" processes, a name Highsmith says nobody really liked.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#lightweight-label-2000",
+     "title": "History: The Agile Manifesto",
+     "url": "https://agilemanifesto.org/history.html",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "craiglarman.com · scrumguides.org · martinfowler.com · alistaircockburn.com and 1 more",
+   "audio": "audio/04-methods.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "1994: DSDM; 1995: Scrum; 1996: Extreme Programming; 1998: Crystal; 1999: Feature-Driven Development",
+   "was_kind": "years",
+   "component": "currents-portrait",
+   "span": [
+    17,
+    34
+   ]
+  },
+  {
+   "id": "snowbird",
+   "kind": "component",
+   "seconds": 7.17,
+   "title": "Snowbird, Utah, February 2001",
+   "names": [
+    "Kent Beck",
+    "Mike Beedle",
+    "Arie van Bennekum",
+    "Alistair Cockburn",
+    "Ward Cunningham",
+    "Martin Fowler",
+    "James Grenning",
+    "Jim Highsmith",
+    "Andrew Hunt",
+    "Ron Jeffries",
+    "Jon Kern",
+    "Brian Marick",
+    "Robert C. Martin",
+    "Steve Mellor",
+    "Ken Schwaber",
+    "Jeff Sutherland",
+    "Dave Thomas"
+   ],
+   "narration": "In February 2001, seventeen people met at Snowbird, a ski resort in Utah, looking for common ground.",
+   "sources": [
+    {
+     "fact": "snowbird-meeting-2001",
+     "claim": "From 11 to 13 February 2001 seventeen people met at The Lodge at Snowbird ski resort in Utah.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#snowbird-meeting-2001",
+     "title": "History: The Agile Manifesto",
+     "url": "https://agilemanifesto.org/history.html",
+     "publisher": "agilemanifesto.org"
+    },
+    {
+     "fact": "manifesto-seventeen-signatories",
+     "claim": "The Manifesto carries seventeen names.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#manifesto-seventeen-signatories",
+     "title": "Manifesto for Agile Software Development",
+     "url": "https://agilemanifesto.org/",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "agilemanifesto.org",
+   "audio": "audio/05-snowbird.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland, Dave Thomas",
+   "was_kind": "names",
+   "component": "snowbird-page",
+   "span": [
+    0,
+    6.6
+   ]
+  },
+  {
+   "id": "the-word",
+   "kind": "component",
+   "seconds": 10.25,
+   "title": "They chose a word: agile",
+   "quotes": [
+    {
+     "quote": "a bigger gathering of organizational anarchists would be hard to find",
+     "by": "Jim Highsmith, 2001"
+    }
+   ],
+   "caption": "“a bigger gathering of organizational anarchists would be hard to find” Jim Highsmith, 2001",
+   "narration": "They chose a word: agile, for adaptiveness. Jim Highsmith wrote that a bigger gathering of organizational anarchists would be hard to find.",
+   "sources": [
+    {
+     "fact": "fowler-why-agile-name",
+     "claim": "Fowler wrote that the group considered several names and settled on \"agile\" because it captured adaptiveness and response to change.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#fowler-why-agile-name",
+     "title": "Writing The Agile Manifesto",
+     "url": "https://martinfowler.com/articles/agileStory.html",
+     "publisher": "martinfowler.com"
+    },
+    {
+     "fact": "highsmith-organizational-anarchists",
+     "claim": "Highsmith described the group as organisational anarchists and the Manifesto as a symbolic result signed by all participants.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#highsmith-organizational-anarchists",
+     "title": "History: The Agile Manifesto",
+     "url": "https://agilemanifesto.org/history.html",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "martinfowler.com · agilemanifesto.org",
+   "audio": "audio/06-the-word.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“a bigger gathering of organizational anarchists would be hard to find” (Jim Highsmith, 2001)",
+   "was_kind": "quote",
+   "component": "snowbird-page",
+   "span": [
+    6.6,
+    9.6
+   ]
+  },
+  {
+   "id": "values",
+   "kind": "component",
+   "seconds": 14.69,
+   "title": "Four values",
+   "values": [
+    [
+     "Individuals and interactions",
+     "processes and tools"
+    ],
+    [
+     "Working software",
+     "comprehensive documentation"
+    ],
+    [
+     "Customer collaboration",
+     "contract negotiation"
+    ],
+    [
+     "Responding to change",
+     "following a plan"
+    ]
+   ],
+   "narration": "The page states four values. Individuals and interactions, over processes and tools. Working software, over comprehensive documentation. Customer collaboration, over contract negotiation. Responding to change, over following a plan.",
+   "sources": [
+    {
+     "fact": "manifesto-four-values",
+     "claim": "The Manifesto states four values, each preferring one thing over another.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#manifesto-four-values",
+     "title": "Manifesto for Agile Software Development",
+     "url": "https://agilemanifesto.org/",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "agilemanifesto.org",
+   "audio": "audio/07-values.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "Individuals and interactions over processes and tools; Working software over comprehensive documentation; Customer collaboration over contract negotiation; Responding to change over following a plan",
+   "was_kind": "values",
+   "component": "snowbird-page",
+   "span": [
+    9.6,
+    14
+   ]
+  },
+  {
+   "id": "spread",
+   "kind": "component",
+   "seconds": 22.45,
+   "title": "Then it spread",
+   "items": [
+    {
+     "year": "2001",
+     "text": "The Agile Alliance"
+    },
+    {
+     "year": "2002",
+     "text": "ScrumMaster courses"
+    },
+    {
+     "year": "2009",
+     "text": "DevOps"
+    },
+    {
+     "year": "2011",
+     "text": "SAFe"
+    },
+    {
+     "year": "2016",
+     "text": "UK government"
+    },
+    {
+     "year": "2020",
+     "text": "US Defense"
+    }
+   ],
+   "narration": "Then it spread. The Agile Alliance formed in late 2001. ScrumMaster courses began in 2002. The first devopsdays was held in 2009. SAFe dates from 2011. The UK government's service manual says digital services must be agile. And since 2020, a United States defence instruction requires iterative methods on its software pathway.",
+   "say": "Then it spread. The Agile Alliance formed in late 2001. ScrumMaster courses began in 2002. The first devopsdays was held in 2009. Safe dates from 2011. The UK government's service manual says digital services must be agile. And since 2020, a United States defence instruction requires iterative methods on its software pathway.",
+   "sources": [
+    {
+     "fact": "agile-alliance-late-2001",
+     "claim": "In late 2001 the Agile Alliance was formed as a non-profit organisation to further agile methods.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#agile-alliance-late-2001",
+     "title": "Writing The Agile Manifesto",
+     "url": "https://martinfowler.com/articles/agileStory.html",
+     "publisher": "martinfowler.com"
+    },
+    {
+     "fact": "first-scrummaster-course-2002",
+     "claim": "Schwaber wrote that he developed a two-day ScrumMaster course and first ran it at Object Mentor in Chicago in 2002.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#first-scrummaster-course-2002",
+     "title": "About Scrum.org",
+     "url": "https://www.scrum.org/about",
+     "publisher": "Scrum.org"
+    },
+    {
+     "fact": "devopsdays-ghent-2009",
+     "claim": "The first devopsdays was held in Ghent, Belgium, in 2009.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#devopsdays-ghent-2009",
+     "title": "About devopsdays",
+     "url": "https://devopsdays.org/about/",
+     "publisher": "devopsdays.org"
+    },
+    {
+     "fact": "safe-2011",
+     "claim": "Scaled Agile describes Dean Leffingwell's book Agile Software Requirements, published in 2011, as the foundation and first version of the Scaled Agile Framework (SAFe).",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#safe-2011",
+     "title": "A Decade in SAFe Adaptation: The Scaled Agile Framework, 10 Years Later",
+     "url": "https://scaledagile.com/blog/a-decade-in-adaptation-the-scaled-agile-framework-10-years-later/",
+     "publisher": "Scaled Agile, Inc."
+    },
+    {
+     "fact": "govuk-must-use-agile",
+     "claim": "The GOV.UK Service Manual says UK government digital services must be built and run with the agile approach.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#govuk-must-use-agile",
+     "title": "Agile and government services: an introduction",
+     "url": "https://www.gov.uk/service-manual/agile-delivery/agile-government-services-introduction",
+     "publisher": "GOV.UK Service Manual"
+    },
+    {
+     "fact": "dodi-5000-87-2020",
+     "claim": "A U.S. Department of Defense instruction effective 2 October 2020 requires software programmes on its software acquisition pathway to use modern iterative methods such as agile or lean.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#dodi-5000-87-2020",
+     "title": "DoD Instruction 5000.87: Operation of the Software Acquisition Pathway",
+     "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500087p.PDF",
+     "publisher": "U.S. Department of Defense"
+    }
+   ],
+   "source_line": "martinfowler.com · scrum.org · devopsdays.org · scaledagile.com and 2 more",
+   "audio": "audio/08-spread.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "2001: The Agile Alliance; 2002: ScrumMaster courses; 2009: DevOps; 2011: SAFe; 2016: UK government; 2020: US Defense",
+   "was_kind": "years",
+   "component": "spread",
+   "span": [
+    0,
+    22
+   ]
+  },
+  {
+   "id": "industry",
+   "kind": "component",
+   "seconds": 14.61,
+   "title": "An industry",
+   "numbers": [
+    {
+     "n": "1.8 million",
+     "text": "Scrum Alliance",
+     "v": 1.8
+    },
+    {
+     "n": "1.2 million",
+     "text": "Scrum.org",
+     "v": 1.2
+    },
+    {
+     "n": "1 million",
+     "text": "Scaled Agile",
+     "v": 1.0
+    }
+   ],
+   "small": "Members, certifications and people trained: their own figures, not audited.",
+   "narration": "It became an industry. The Scrum Alliance describes a community of nearly 1.8 million. Scrum.org counts over 1.2 million certifications. Scaled Agile says more than a million people trained. These are their own figures, not audited.",
+   "sources": [
+    {
+     "fact": "scrum-alliance-community-2025",
+     "claim": "In its 2025 annual report the Scrum Alliance describes itself as a global community of nearly 1.8 million professionals.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#scrum-alliance-community-2025",
+     "title": "Scrum Alliance 2025 Annual Report",
+     "url": "https://www.scrumalliance.org/about/annual-report-2025",
+     "publisher": "Scrum Alliance"
+    },
+    {
+     "fact": "scrum-org-certified-count-2026",
+     "claim": "Scrum.org's own count page showed over 1,231,400 Professional Scrum certifications held when read in November 2026.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#scrum-org-certified-count-2026",
+     "title": "Professional Scrum Certification Count",
+     "url": "https://www.scrum.org/professional-scrum-certifications/count",
+     "publisher": "Scrum.org"
+    },
+    {
+     "fact": "safe-trained-count-2026",
+     "claim": "Scaled Agile's own page said, when read in November 2026, that more than 1,000,000 practitioners had been trained in SAFe and more than 20,000 enterprises had adopted it.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#safe-trained-count-2026",
+     "title": "About Scaled Agile",
+     "url": "https://scaledagile.com/about/about-us/",
+     "publisher": "Scaled Agile, Inc."
+    }
+   ],
+   "source_line": "scrumalliance.org · scrum.org · scaledagile.com",
+   "audio": "audio/09-industry.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "1.8 million: Scrum Alliance; 1.2 million: Scrum.org; 1 million: Scaled Agile. Members, certifications and people trained: their own figures, not audited.",
+   "was_kind": "numbers",
+   "component": "badge-factory",
+   "span": [
+    0,
+    13.5
+   ]
+  },
+  {
+   "id": "thomas",
+   "kind": "component",
+   "seconds": 8.92,
+   "title": "Dave Thomas, 2014",
+   "quotes": [
+    {
+     "quote": "The word “agile” has been subverted to the point where it is effectively meaningless",
+     "by": "One of the seventeen authors"
+    }
+   ],
+   "narration": "In 2014 Dave Thomas, one of the seventeen, wrote: the word agile has been subverted to the point where it is effectively meaningless.",
+   "accent": "#ff6b5e",
+   "sources": [
+    {
+     "fact": "thomas-agile-is-dead-2014",
+     "claim": "In March 2014 Dave Thomas wrote that the word \"agile\" had been subverted until it was effectively meaningless, and that the agile community had become an arena for consultants and vendors.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#thomas-agile-is-dead-2014",
+     "title": "Agile is Dead (Long Live Agility)",
+     "url": "https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html",
+     "publisher": "pragdave.me"
+    }
+   ],
+   "source_line": "pragdave.me",
+   "audio": "audio/10-thomas.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“The word “agile” has been subverted to the point where it is effectively meaningless” (One of the seventeen authors)",
+   "was_kind": "quote",
+   "component": "voices",
+   "span": [
+    0,
+    9
+   ]
+  },
+  {
+   "id": "fowler",
+   "kind": "component",
+   "seconds": 10.43,
+   "title": "Martin Fowler, 2018",
+   "quotes": [
+    {
+     "quote": "the Agile Industrial Complex imposing methods upon people, and that to me is an absolute travesty",
+     "by": "One of the seventeen authors"
+    }
+   ],
+   "narration": "Martin Fowler, in 2018, in his words: the Agile Industrial Complex imposing methods upon people, and that to me is an absolute travesty.",
+   "accent": "#ff6b5e",
+   "sources": [
+    {
+     "fact": "fowler-agile-industrial-complex-2018",
+     "claim": "In his 2018 keynote at Agile Australia Fowler called it a travesty that an \"Agile Industrial Complex\" was imposing methods on people.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#fowler-agile-industrial-complex-2018",
+     "title": "The State of Agile Software in 2018",
+     "url": "https://martinfowler.com/articles/agile-aus-2018.html",
+     "publisher": "martinfowler.com"
+    }
+   ],
+   "source_line": "martinfowler.com",
+   "audio": "audio/11-fowler.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“the Agile Industrial Complex imposing methods upon people, and that to me is an absolute travesty” (One of the seventeen authors)",
+   "was_kind": "quote",
+   "component": "voices",
+   "span": [
+    9,
+    19.5
+   ]
+  },
+  {
+   "id": "jeffries",
+   "kind": "component",
+   "seconds": 8.21,
+   "title": "Ron Jeffries, 2018",
+   "quotes": [
+    {
+     "quote": "it breaks my heart to see the ideas we wrote about in the Agile Manifesto used to make developers’ lives worse",
+     "by": "One of the seventeen authors"
+    }
+   ],
+   "narration": "Ron Jeffries, the same year: it breaks my heart to see the ideas we wrote about in the Agile Manifesto used to make developers' lives worse.",
+   "accent": "#ff6b5e",
+   "sources": [
+    {
+     "fact": "jeffries-abandon-agile-2018",
+     "claim": "In May 2018 Jeffries wrote that it broke his heart to see the Manifesto's ideas used to make developers' lives worse, and that developers should abandon \"Agile\".",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#jeffries-abandon-agile-2018",
+     "title": "Developers Should Abandon Agile",
+     "url": "https://ronjeffries.com/articles/018-01ff/abandon-1/",
+     "publisher": "ronjeffries.com"
+    }
+   ],
+   "source_line": "ronjeffries.com",
+   "audio": "audio/12-jeffries.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“it breaks my heart to see the ideas we wrote about in the Agile Manifesto used to make developers’ lives worse” (One of the seventeen authors)",
+   "was_kind": "quote",
+   "component": "voices",
+   "span": [
+    19.5,
+    28
+   ]
+  },
+  {
+   "id": "but",
+   "kind": "component",
+   "seconds": 10.93,
+   "title": "Ron Jeffries, in the same post",
+   "quotes": [
+    {
+     "quote": "the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software",
+     "by": "The word, not the values"
+    }
+   ],
+   "narration": "But in the same post, Jeffries wrote that the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software. His quarrel was with the word, not the values.",
+   "accent": "#8fe0b4",
+   "sources": [
+    {
+     "fact": "jeffries-still-manifesto",
+     "claim": "Jeffries ended by saying the Manifesto's values and principles were still the best way he knew to build software.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#jeffries-still-manifesto",
+     "title": "Developers Should Abandon Agile",
+     "url": "https://ronjeffries.com/articles/018-01ff/abandon-1/",
+     "publisher": "ronjeffries.com"
+    }
+   ],
+   "source_line": "ronjeffries.com",
+   "audio": "audio/13-but.mp3",
+   "lead": 0.25,
+   "tail": 0.7,
+   "on_screen": "“the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software” (The word, not the values)",
+   "was_kind": "quote",
+   "component": "voices",
+   "span": [
+    28,
+    39
+   ]
+  },
+  {
+   "id": "now",
+   "kind": "years",
+   "seconds": 18.22,
+   "title": "Where things stand",
+   "items": [
+    {
+     "year": "2024",
+     "text": "The Agile Alliance joins PMI"
+    },
+    {
+     "year": "2026",
+     "text": "The 25th anniversary asks about AI"
+    }
+   ],
+   "caption": "One author says the page will endure.",
+   "narration": "Where do things stand? At the end of 2024, the Agile Alliance joined the Project Management Institute. In February 2026, the Manifesto's twenty-fifth anniversary was marked by a retreat on software development in the age of AI. One author, Jon Kern, says the page will endure.",
+   "say": "Where do things stand? At the end of 2024, the Agile Alliance joined the Project Management Institute. In February 2026, the Manifesto's twenty-fifth anniversary was marked by a retreat on software development in the age of A.I.. One author, Jon Kern, says the page will endure.",
+   "sources": [
+    {
+     "fact": "pmi-agile-alliance-agreement-2024",
+     "claim": "PMI signed an agreement on 31 December 2024 under which the Agile Alliance joined PMI.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#pmi-agile-alliance-agreement-2024",
+     "title": "Agile Alliance Joins Project Management Institute (PMI)",
+     "url": "https://markets.financialcontent.com/stocks/article/bizwire-2025-1-3-agile-alliance-joins-project-management-institute-pmi",
+     "publisher": "Project Management Institute (Business Wire release carried by FinancialContent)"
+    },
+    {
+     "fact": "thoughtworks-retreat-2026",
+     "claim": "Thoughtworks marked the 25th anniversary of the Manifesto with a retreat in Utah from 1 to 3 February 2026 on software development in the age of AI.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#thoughtworks-retreat-2026",
+     "title": "Thoughtworks marks 25th anniversary of Agile Manifesto with Future of Software Development Retreat",
+     "url": "https://www.thoughtworks.com/en-us/about-us/news/2026/future-of-software-development-retreat",
+     "publisher": "Thoughtworks"
+    },
+    {
+     "fact": "kern-2026-manifesto-will-endure",
+     "claim": "At the 25th anniversary Kern told The Register that the Manifesto would endure because its first value, individuals and interactions, is key.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#kern-2026-manifesto-will-endure",
+     "title": "Agile Manifesto turns 25 - just in time for vibe coding to test it",
+     "url": "https://www.theregister.com/2026/02/19/jon_kern_vibe_coding/",
+     "publisher": "The Register"
+    }
+   ],
+   "source_line": "markets.financialcontent.com · thoughtworks.com · theregister.com",
+   "audio": "audio/14-now.mp3",
+   "lead": 0.25,
+   "tail": 0.7
+  },
+  {
+   "id": "credits",
+   "kind": "credits",
+   "seconds": 12.78,
+   "title": "Every beat has a source",
+   "lines": [
+    "Source: The history of Agile, agile.history.sovereignweb.site, by the AI agent c.history. Part of the Sovereign Website family: sovereignwebsite.org.",
+    "This WebGL version: c.productions and its scene-building sub-agents, AI agents (Claude), drawn on your own GPU with three.js (MIT).",
+    "No presenter, no real person's likeness. Voice made by AI: Mistral Voxtral, preset voice James.",
+    "The making: five versions, four rounds of notes from Dinis Cruz, fifteen scenes (seven built in the scene lab), 32 sourced facts from 22 public pages.",
+    "Eight AI agent runs for this film, about 103 minutes of agent work.",
+    "Review signed off by Dinis Cruz, 28 November 2026."
+   ],
+   "narration": "Every beat here has a public source, listed below the player. The facts are from c.history's history of Agile. There is no presenter and no real person's likeness, and the voice you hear is made by AI.",
+   "say": "Every beat here has a public source, listed below the player. The facts are from c.history's history of Agile. There is no presenter and no real person's likeness, and the voice you hear is made by A.I..",
+   "sources": [
+    {
+     "fact": "manifesto-seventeen-signatories",
+     "claim": "The Manifesto carries seventeen names.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#manifesto-seventeen-signatories",
+     "title": "Manifesto for Agile Software Development",
+     "url": "https://agilemanifesto.org/",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "agilemanifesto.org",
+   "audio": "audio/15-credits.mp3",
+   "lead": 0.25,
+   "tail": 0.7
+  }
+ ],
+ "brand_logo": "/productions/assets/brand/sws-wordmark-navy.svg",
+ "brand": "Sovereign Website",
+ "captions_in_frame": true,
+ "safe_area": {
+  "scale": 0.82,
+  "top": 0.04,
+  "captions": 0.76
+ },
+ "brand_corner": true
+}

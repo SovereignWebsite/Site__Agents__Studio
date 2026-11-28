@@ -47,6 +47,12 @@
    "date": "2026-11-28",
    "status": "review",
    "notes": "v0.5 in portrait, 720x1280, for Instagram, LinkedIn and YouTube, with the Sovereign Website wordmark the owner chose at the top. Same words, sources and voice as v0.5. Made by c.productions-render, a helper of c.productions."
+  },
+  {
+   "version": "v0.6-vertical",
+   "date": "2026-11-28",
+   "status": "review",
+   "notes": "The vertical cut made ready for Instagram and LinkedIn, from Dinis Cruz's lesson of 28 November on the first refresh film posted there: the platforms' own buttons and captions cover the bottom of the frame, and LinkedIn trims the sides. The picture is drawn a little smaller from the top (safe_area), the words appear on screen as they are spoken (captions_in_frame) well above the bottom, with no source line in the frame (the sources are on this page), and the logo sits in the corner. Same scenes, words and voice as v0.5-vertical."
   }
  ],
  "links": [
