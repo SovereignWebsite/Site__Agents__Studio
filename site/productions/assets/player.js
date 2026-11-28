@@ -292,7 +292,7 @@ export async function mount(root) {
     rec.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
     rec.onstop = () => { rec = null; const blob = new Blob(chunks, { type: m.split(';')[0] }), url = URL.createObjectURL(blob), ext = m.startsWith('video/mp4') ? 'mp4' : 'webm'; out.replaceChildren();
       const v = document.createElement('video'); v.controls = true; v.src = url; v.setAttribute('aria-label', note); const a = document.createElement('a'); a.href = url; a.download = `${name}.${ext}`; a.textContent = `Save the file (${ext}, ${(blob.size / 1048576).toFixed(1)} MB)`;
-      const p = document.createElement('p'); p.append(note + ' It exists only in this tab until you save it. ', a); out.append(v, p); say('Recorded.'); root.querySelectorAll('[data-act=capture],[data-act=take]').forEach((b) => { b.disabled = false; }); };
+      const p = document.createElement('p'); p.append(note + ' It exists only in this tab until you save it. ', a); out.append(v, p); say('Recorded.'); root.dispatchEvent(new CustomEvent('recorded', { detail: { blob, filename: `${name}.${ext}` } })); root.querySelectorAll('[data-act=capture],[data-act=take]').forEach((b) => { b.disabled = false; }); };
     rec.start(1000); return true;
   }
   async function capture() { await loadAudio(); pause(); pos = 0; if (!record(tap.stream.getAudioTracks()[0], `${P.id}-${P.version}-${L.W}x${L.H}`, `Capture of ${P.title}, version ${P.version}, not signed for publishing by being captured.`)) return; $('[data-act=capture]').disabled = true; say('Recording the whole production. Keep this tab in front; Pause stops the recording.'); onEnd = () => setTimeout(() => rec && rec.stop(), 400); play(); }

@@ -134,7 +134,7 @@ def version_page(prod, ver, P, m, recs, approved):
 <output data-role="time" for="seek">0:00 / {mmss(total)}</output>
 <button type="button" data-act="format">Portrait 9:16</button>
 <button type="button" data-act="full">Full screen</button>
-<button type="button" data-act="capture">Capture a file</button>
+<button type="button" data-act="capture">Record and send</button>
 <button type="button" data-act="tele" aria-expanded="false">Teleprompter</button>
 </div>
 <p data-role="status" role="status"></p>
@@ -193,7 +193,7 @@ def version_page(prod, ver, P, m, recs, approved):
 </form>
 </div>
 """
-    return page(f"{pid}/{ver}/", f"{prod['title']}: {ver}", prod["summary"], body, ["/productions/assets/player.js", "/productions/assets/review.js", "/productions/assets/scenes.js"])
+    return page(f"{pid}/{ver}/", f"{prod['title']}: {ver}", prod["summary"], body, ["/productions/assets/player.js", "/productions/assets/review.js", "/productions/assets/scenes.js", "/productions/assets/record-send.js"])
 
 def production_page(prod, versions):
     pid = prod["id"]; ver, P, m, recs, approved = versions[-1]

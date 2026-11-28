@@ -85,3 +85,4 @@ details summary{cursor:pointer;font-weight:600;margin:.6rem 0}
 [data-act=dictate][aria-pressed=true]{border-color:var(--bad);font-weight:700}[data-act=dictate][aria-pressed=true]::before{content:"\25CF\00A0";color:var(--bad)}
 .signin{border:2px solid var(--accent);border-radius:10px;padding:.6rem .8rem;background:var(--card);max-width:46rem}.signin textarea{max-width:none}
 textarea:disabled{opacity:.55;cursor:not-allowed}
+.sendbox{border:2px solid var(--accent);border-radius:10px;padding:.6rem .9rem;margin:1rem 0;background:var(--card);max-width:46rem}.sendbox input,.sendbox select{font:inherit;padding:.4rem;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);min-width:16rem}.sendbox code.big{font-size:1.3rem;font-weight:700;user-select:all}

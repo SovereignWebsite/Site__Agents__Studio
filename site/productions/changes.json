@@ -4,6 +4,18 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agent__Studio/commits/dev/site/productions",
  "changes": [
   {
+   "commit": "8284eeb",
+   "date_utc": "2026-11-28 18:01",
+   "what": "Agile Cells v0.6: for people who run Agile, the values sound, the practice hardened (82 s)",
+   "detail": "From Dinis Cruz's feedback on v0.5 (recorded in production.json): opens on the\nteam's proposition, \"Agile is great. But it struggles to scale. Now we have a way\nto make it scale: Agile Cells\"; the four values; Ron Jeffries, 2018, exactly quoted\nand credited, over lab/cells-sound (new: four warm lights stay lit while a hard\nshell accretes round them), \"what hardens, as it grows, is the word, and the way\nit is run\"; then the cell, the scale, the real film and the close. Checked in\nportrait and landscape; one viewer round in v0.6/notes. All four checks pass.\nNot signed; nothing published."
+  },
+  {
+   "commit": "de18f58",
+   "date_utc": "2026-11-28 18:01",
+   "what": "How we refresh a session v0.8: the lessons are spoken as they appear",
+   "detail": "Dinis Cruz, 28 Nov 2026: in the 'copy this' scene the voice ran ahead of the picture and then left a gap of about\ntwo seconds. The three lessons were spoken in about four seconds while the picture shows them two seconds apart\nover seven. Each is now voiced on its own and placed under its picture (0.3, 2.4 and 4.5 s); the scene is 7 s."
+  },
+  {
    "commit": "95099bd",
    "date_utc": "2026-11-28 17:56",
    "what": "c.productions: now.md records that vault keys may be asked back from the maestro, sealed",
@@ -350,18 +362,6 @@
    "date_utc": "2026-11-28 12:37",
    "what": "Productions: the Higgsfield renewal trial, four tests",
    "detail": "The four tests account B's Higgsfield agent asked to see at a public URL, so Dinis Cruz can judge\nwhether Higgsfield earns next month's renewal: opening plates, storyboard key frames, one motion\ntexture, poster frames. Every generation's cost and outcome to be recorded. Nothing is spent until\nDinis's own word on the cap. Path claimed by conductor.c (db00c23)."
-  },
-  {
-   "commit": "6c5df77",
-   "date_utc": "2026-11-28 12:35",
-   "what": "Session refresh document: three clarifications from b.maestro's review, relayed by c.maestro",
-   "detail": "Which session is 'that test'; the 96% figure explained (about 99% against output alone); skills stated as a plan,\nnot yet a practice. now.md records what the Higgsfield and ElevenLabs agents need before they act."
-  },
-  {
-   "commit": "e821fa5",
-   "date_utc": "2026-11-28 12:17",
-   "what": "How we refresh a session v0.5: compaction we control, and a key for one session",
-   "detail": "From Dinis Cruz's notes of 28 Nov 2026 after reading the reviews: not a film about lessons learnt; the message is\na formal workflow for compacting, run by conductors and maestros, with a key pair per session underneath it.\n- The cover says Claude compacts a long session for you and that we compact ours on purpose.\n- The steps are worded as compaction; the new session is shown loading the agent behaviour policies.\n- The keys scene is back (the first half of lab/refresh-keys). Eleven scenes, about 107 seconds.\n- No new picture was built for this cut; the zooms into the key pair and the note are still owed."
   }
  ]
 }

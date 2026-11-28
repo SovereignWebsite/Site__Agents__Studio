@@ -2,11 +2,11 @@
  "about": "The files that make this version's picture and sound. The digest is the SHA-256 of the lines '<sha256>  <path>\\n' in this order. A review signs this digest.",
  "production": "web-summit-galaxy",
  "version": "v0.1",
- "digest": "8d73baea90f0337f333f116a388e0aacf432dbd23e999f4afd7f8a3f09415968",
+ "digest": "fa471b3c9bc1ab102934ffdb9b16b4e5aa38e84feae37ccb9b9b79e4ee95415f",
  "files": [
   {
    "path": "assets/player.js",
-   "sha256": "bd3003f48d90d681ee8e6addea844d272620dab48eec261ad5976c477679d0cf"
+   "sha256": "c8bbebc24cefd942d57959c71752daae49a967bd0d30698d404b0c43f7ed272f"
   },
   {
    "path": "web-summit-galaxy/v0.1/scenes.json",
