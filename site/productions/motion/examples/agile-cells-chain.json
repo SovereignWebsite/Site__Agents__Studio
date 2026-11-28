@@ -1,0 +1,49 @@
+{
+  "schema": "motion.scene/v1",
+  "id": "agile-cells-chain",
+  "title": "How a cell starts",
+  "format": { "w": 720, "h": 1280 },
+  "theme": "auto",
+  "sources": [
+    { "id": "s1", "title": "The team that made the film (session refresh)", "url": "https://studio.agents.sovereignweb.site/productions/session-refresh/team/" },
+    { "id": "s2", "title": "The Agile Cells film start prompt", "url": "https://studio.agents.sovereignweb.site/productions/plans/2026-11-28-agile-cells-film-start-prompt.md" }
+  ],
+  "scenes": [
+    {
+      "id": "start", "type": "handoff", "title": "One, then the next",
+      "narration": "A person briefs c.maestro, c.maestro briefs c.productions, and c.productions starts the scene builders, a critic and test viewers.",
+      "sources": ["s1", "s2"],
+      "vars": {
+        "step": 1.1,
+        "carry": "the brief",
+        "actors": [
+          { "id": "d", "label": "Dinis Cruz", "role": "person", "note": "asks" },
+          { "id": "m", "label": "c.maestro", "role": "agent" },
+          { "id": "p", "label": "c.productions", "role": "agent" },
+          { "id": "b", "label": "scene builders", "role": "agent" },
+          { "id": "c", "label": "critic", "role": "agent" },
+          { "id": "v", "label": "test viewers", "role": "agent" }
+        ],
+        "links": [
+          { "from": "d", "to": "m" }, { "from": "m", "to": "p" },
+          { "from": "p", "to": "b" }, { "from": "p", "to": "c" }, { "from": "p", "to": "v" }
+        ],
+        "end": "Each one briefed by the one before"
+      }
+    },
+    {
+      "id": "cell", "type": "cell", "title": "A cell for one task",
+      "narration": "A lead person, agents and files gather in one cell. It grows to fifty roles, then folds into its files.",
+      "sources": ["s1", "s2"],
+      "vars": {
+        "lead": { "label": "Lead", "role": "person" },
+        "members": [ { "label": "agents", "role": "agent" }, { "label": "conductor", "role": "agent" }, { "label": "helpers", "role": "agent" } ],
+        "files": ["roles", "rules", "work"],
+        "growth": [6, 10, 20, 30, 50],
+        "unit": "roles",
+        "close": "fold",
+        "end": "Formed for one task, ended after it, its files kept"
+      }
+    }
+  ]
+}

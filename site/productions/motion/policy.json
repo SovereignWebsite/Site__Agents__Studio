@@ -1,0 +1,273 @@
+{
+  "schema": "motion.policy/v1",
+  "palette": {
+    "amber": "#ffc857",
+    "teal": "#5fd0c5",
+    "ink": "#f4f1e8",
+    "rose": "#ff8fa3",
+    "violet": "#b69cff",
+    "blue": "#7db4ff"
+  },
+  "scene": {
+    "seconds": {
+      "min": 2,
+      "max": 40
+    }
+  },
+  "locked": [
+    "timings beyond the ranges given (a scene lasts 2 to 40 seconds)",
+    "layout and orientation",
+    "fonts and sizes",
+    "colours outside the palette",
+    "any variable not listed as open"
+  ],
+  "types": {
+    "handoff": {
+      "open": {
+        "actors": {
+          "kind": "list",
+          "min": 2,
+          "max": 7,
+          "item": {
+            "kind": "object",
+            "autoId": "a",
+            "fields": {
+              "id": {
+                "kind": "id"
+              },
+              "label": {
+                "kind": "text",
+                "max": 90
+              },
+              "role": {
+                "kind": "enum",
+                "values": [
+                  "person",
+                  "agent",
+                  "file"
+                ]
+              },
+              "note": {
+                "kind": "text",
+                "max": 60
+              },
+              "colour": {
+                "kind": "colour"
+              }
+            }
+          }
+        },
+        "links": {
+          "kind": "list",
+          "min": 0,
+          "max": 12,
+          "item": {
+            "kind": "object",
+            "required": [
+              "from",
+              "to"
+            ],
+            "fields": {
+              "from": {
+                "kind": "enum",
+                "values": "actors"
+              },
+              "to": {
+                "kind": "enum",
+                "values": "actors"
+              },
+              "label": {
+                "kind": "text",
+                "max": 30
+              },
+              "carry": {
+                "kind": "text",
+                "max": 40
+              }
+            }
+          }
+        },
+        "direction": {
+          "kind": "enum",
+          "values": [
+            "auto",
+            "down",
+            "across"
+          ]
+        },
+        "step": {
+          "kind": "number",
+          "min": 0.3,
+          "max": 3
+        },
+        "carry": {
+          "kind": "text",
+          "max": 80
+        },
+        "end": {
+          "kind": "text",
+          "max": 80
+        }
+      },
+      "locked": [
+        "timings beyond the ranges given (a scene lasts 2 to 40 seconds)",
+        "layout and orientation",
+        "fonts and sizes",
+        "colours outside the palette",
+        "any variable not listed as open"
+      ]
+    },
+    "cell": {
+      "open": {
+        "lead": {
+          "kind": "object",
+          "fields": {
+            "label": {
+              "kind": "text",
+              "max": 30
+            },
+            "role": {
+              "kind": "enum",
+              "values": [
+                "person",
+                "agent",
+                "file"
+              ]
+            },
+            "colour": {
+              "kind": "colour"
+            }
+          }
+        },
+        "members": {
+          "kind": "list",
+          "min": 0,
+          "max": 6,
+          "item": {
+            "kind": "object",
+            "fields": {
+              "label": {
+                "kind": "text",
+                "max": 30
+              },
+              "role": {
+                "kind": "enum",
+                "values": [
+                  "person",
+                  "agent",
+                  "file"
+                ]
+              },
+              "colour": {
+                "kind": "colour"
+              }
+            }
+          }
+        },
+        "files": {
+          "kind": "list",
+          "min": 0,
+          "max": 4,
+          "item": {
+            "kind": "text",
+            "max": 20
+          }
+        },
+        "growth": {
+          "kind": "list",
+          "min": 0,
+          "max": 6,
+          "ascending": true,
+          "item": {
+            "kind": "number",
+            "min": 1,
+            "max": 100,
+            "int": true
+          }
+        },
+        "close": {
+          "kind": "enum",
+          "values": [
+            "fold",
+            "keep",
+            "none"
+          ]
+        },
+        "unit": {
+          "kind": "text",
+          "max": 20
+        },
+        "end": {
+          "kind": "text",
+          "max": 80
+        }
+      },
+      "locked": [
+        "timings beyond the ranges given (a scene lasts 2 to 40 seconds)",
+        "layout and orientation",
+        "fonts and sizes",
+        "colours outside the palette",
+        "any variable not listed as open"
+      ]
+    },
+    "title": {
+      "open": {
+        "text": {
+          "kind": "text",
+          "max": 80
+        },
+        "sub": {
+          "kind": "text",
+          "max": 100
+        }
+      },
+      "locked": [
+        "timings beyond the ranges given (a scene lasts 2 to 40 seconds)",
+        "layout and orientation",
+        "fonts and sizes",
+        "colours outside the palette",
+        "any variable not listed as open"
+      ]
+    },
+    "count": {
+      "open": {
+        "from": {
+          "kind": "number",
+          "min": 0,
+          "max": 1000000,
+          "int": true
+        },
+        "to": {
+          "kind": "number",
+          "min": 0,
+          "max": 1000000,
+          "int": true
+        },
+        "unit": {
+          "kind": "text",
+          "max": 20
+        },
+        "label": {
+          "kind": "text",
+          "max": 60
+        },
+        "lines": {
+          "kind": "list",
+          "min": 0,
+          "max": 4,
+          "item": {
+            "kind": "text",
+            "max": 60
+          }
+        }
+      },
+      "locked": [
+        "timings beyond the ranges given (a scene lasts 2 to 40 seconds)",
+        "layout and orientation",
+        "fonts and sizes",
+        "colours outside the palette",
+        "any variable not listed as open"
+      ]
+    }
+  }
+}
