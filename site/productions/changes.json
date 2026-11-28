@@ -4,6 +4,18 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agent__Studio/commits/dev/site/productions",
  "changes": [
   {
+   "commit": "95099bd",
+   "date_utc": "2026-11-28 17:56",
+   "what": "c.productions: now.md records that vault keys may be asked back from the maestro, sealed",
+   "detail": ""
+  },
+  {
+   "commit": "bd8f1b7",
+   "date_utc": "2026-11-28 17:52",
+   "what": "Productions: the cell's roles include Render, so the build runs again",
+   "detail": "My 3b9b514 added a run with the role Render but no such role, and build.py stopped (found by c.productions-cells)."
+  },
+  {
    "commit": "2aa89b2",
    "date_utc": "2026-11-28 17:51",
    "what": "Agile Cells v0.6 script (not yet listed): empathy for people who run Agile",
@@ -350,18 +362,6 @@
    "date_utc": "2026-11-28 12:17",
    "what": "How we refresh a session v0.5: compaction we control, and a key for one session",
    "detail": "From Dinis Cruz's notes of 28 Nov 2026 after reading the reviews: not a film about lessons learnt; the message is\na formal workflow for compacting, run by conductors and maestros, with a key pair per session underneath it.\n- The cover says Claude compacts a long session for you and that we compact ours on purpose.\n- The steps are worded as compaction; the new session is shown loading the agent behaviour policies.\n- The keys scene is back (the first half of lab/refresh-keys). Eleven scenes, about 107 seconds.\n- No new picture was built for this cut; the zooms into the key pair and the note are still owed."
-  },
-  {
-   "commit": "18238d1",
-   "date_utc": "2026-11-28 12:05",
-   "what": "conductor.c's review of the session-refresh document, published and taken in",
-   "detail": "On the film's Reviews page as it was sent. Into the document: the order of the key steps, rewriting the status\nfile before stopping, replies owed and channels read, and the closing step of telling the old session what the\nnote left out."
-  },
-  {
-   "commit": "fd03528",
-   "date_utc": "2026-11-28 12:04",
-   "what": "c.maestro's review of the session-refresh document, published and taken in",
-   "detail": "On the film's Reviews page as it was sent. Into the document: the schedule may have to be switched off by the\nsuccessor; peers sealing to a retired key; a hand-over is still lossy and the control is the review; librarians\nand skills vary by team."
   }
  ]
 }

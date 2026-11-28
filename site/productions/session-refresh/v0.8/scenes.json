@@ -269,7 +269,7 @@
   {
    "id": "lesson",
    "kind": "component",
-   "seconds": 7.11,
+   "seconds": 7.0,
    "title": "The lesson",
    "narration": "Write it early. Keep state in files. Load only what you need.",
    "sources": [
@@ -289,8 +289,9 @@
    ],
    "caption": "Copy this",
    "audio": "audio/10-lesson.mp3",
-   "lead": 0.25,
-   "tail": 3.2
+   "lead": 0.0,
+   "tail": 0.0,
+   "audio_note": "Three phrases voiced separately and placed at 0.3, 2.4 and 4.5 s, as each appears in the picture (28 November 2026, after Dinis saw the voice run ahead of the picture)."
   },
   {
    "id": "team",
