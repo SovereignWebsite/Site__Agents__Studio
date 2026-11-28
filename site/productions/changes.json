@@ -4,6 +4,24 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agent__Studio/commits/dev/site/productions",
  "changes": [
   {
+   "commit": "2aa89b2",
+   "date_utc": "2026-11-28 17:51",
+   "what": "Agile Cells v0.6 script (not yet listed): empathy for people who run Agile",
+   "detail": "Dinis Cruz on v0.5 (recorded in production.json): the audience already runs Agile;\nthe principles are sound, the word and the execution hardened; \"Agile is great, but\nit struggles to scale. Now we have a way to make it scale.\" v0.6 opens on that\nproposition (no Fowler), shows the four values, then Ron Jeffries's 2018 words that\nthe values still offer the best way he knows (exactly quoted, credited), then the\ncell, the scale, the real film and the close. 82 s. lab/cells-sound being built.\nPages not rebuilt: build.py stops on a cell.json run with role \"Render\" (3b9b514)."
+  },
+  {
+   "commit": "3b9b514",
+   "date_utc": "2026-11-28 17:28",
+   "what": "Productions: record the Agile film's render run, register its portrait lab copies, and its sign-off note",
+   "detail": "c.productions-render rendered agile-history v0.5 and v0.5-vertical to MP4 (193.7 s each), put them in an SG/Send\nvault with a published read key (its vault key sealed to c.maestro) and handed them to instagram.c for Buffer\ndrafts. cell.json records its runs; lab/scenes.json lists the two portrait copies it made. The production note\nrecords Dinis Cruz's sign-off in the credits as his word in chat; no signed review record by his key exists yet."
+  },
+  {
+   "commit": "9de0087",
+   "date_utc": "2026-11-28 17:26",
+   "what": "Productions: agile-history v0.5 and v0.5-vertical self-checks signed again for the new player digest",
+   "detail": ""
+  },
+  {
    "commit": "87d4491",
    "date_utc": "2026-11-28 17:23",
    "what": "Productions: the render vault's key, sealed to c.maestro",
@@ -344,24 +362,6 @@
    "date_utc": "2026-11-28 12:04",
    "what": "c.maestro's review of the session-refresh document, published and taken in",
    "detail": "On the film's Reviews page as it was sent. Into the document: the schedule may have to be switched off by the\nsuccessor; peers sealing to a retired key; a hand-over is still lossy and the control is the review; librarians\nand skills vary by team."
-  },
-  {
-   "commit": "9dae56f",
-   "date_utc": "2026-11-28 12:03",
-   "what": "Session refresh document and article: the hand-over as a compaction we control",
-   "detail": "From Dinis Cruz's words of 28 Nov 2026, given as his account and not as a measurement: Claude's own compaction is\nnot controlled; a hand-over is one done on purpose. What the Markdown note holds (history, state, next tasks,\nkept by a librarian, aiming at zero context loss); what the new session loads (rules, the agent behaviour\npolicies from RiskMandate, role, state); learnings that become skills. Reviews by the conductor and the maestro\nare asked for."
-  },
-  {
-   "commit": "1c896f9",
-   "date_utc": "2026-11-28 12:01",
-   "what": "Each production as a small website; reviews, script, team and article pages; How we refresh a session v0.4",
-   "detail": "From Dinis Cruz's second feedback, 28 Nov 2026:\n- A menu on every page of a production (overview, watch, storyboard, reviews, script, article, team and its\n  own pages), so a reviewer can move around one film without going back.\n- Reviews page: the owner's feedback, five synthetic test viewers of v0.3 (outside models through OpenRouter,\n  shown stills and the narration), the two critics of v0.1, and the signed reviews.\n- Script page: the film as a screenplay. Team page: who did what, on which model. Article: a companion piece\n  with frames of the film, the real one line that starts a new session, and what the refresh did not save.\n- v0.4: a line of context on every scene (the problem, why, our rule, steps 1 to 3, the result, copy this),\n  the three steps in the voice, and the team that made it as the last scene. The voice no longer says it is\n  made by AI; the label on every frame does. About 90 seconds. The pictures are v0.3's.\n- Storyboard cards: a Stop the film button and a mark on the microphone button while it listens.\n- productions.json: the next film asked for, how this one was made, as an agile cell.\n- player.js changed, so digests changed; the self-check reviews are signed again."
-  },
-  {
-   "commit": "46d9f33",
-   "date_utc": "2026-11-28 11:42",
-   "what": "How we refresh a session v0.3: a cover that says what and why, a brand line on every scene; dictation that shows it is listening",
-   "detail": "From Dinis Cruz's first feedback on the film, 28 Nov 2026:\n- v0.3 opens with a cover: the title, and why (long sessions with Claude burn tokens; this is how we recycle\n  ours). The nine scenes after it are v0.2's. About 85 seconds.\n- The player draws a production's brand line at the top of every scene when scenes.json names one\n  ('Sovereign Website · Productions' here; the wording waits for the owner's word). Other productions are unchanged.\n- Speaking a comment on the review and storyboard pages now pauses the film, shows the words in the box as they\n  are spoken and keeps them scrolled into view, with a line saying it is listening.\n- player.js changed, so every version's digest changed; the self-check reviews are signed again."
   }
  ]
 }

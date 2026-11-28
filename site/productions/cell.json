@@ -39,6 +39,11 @@
    "role": "Generated footage",
    "does": "Not filled yet. A Higgsfield agent has been asked for through c.conductor.",
    "runs": 0
+  },
+  {
+   "role": "Render",
+   "does": "Turns a version into a video file frame by frame (_build/render.js), puts it in an SG/Send vault and hands it to the publishing agent.",
+   "runs": 1
   }
  ],
  "runs": [
