@@ -58,6 +58,9 @@ A helper session, c.productions-agile, was started at Dinis's word to finish the
 - Player, today: brand_logo, brand_corner, captions_in_frame (two lines at most), label_end_only, a scene's mark, and components made only around the scene playing (the WebGL context limit). Review pages: sign in where you review.
 - c.maestro started c.motion (session_01Kw9UwFhtgjn47iC3fRu3qr, branch work/c.motion) to turn these animations into a reusable runtime and schema; answer it when it asks how a scene was made.
 
+## Standing word from Dinis (28 Nov, about 18:05 UTC): vault keys may be asked back from the maestro
+"It's okay for you to ask that conductor, that maestro, for the key for you to update it ... It's a vault key. You just seal it to your key." So a vault key held by c.maestro can be asked for, re-sealed to c.productions's public key, ciphertext only. Asked for the Agile video vault 5q2erx8p on 28 Nov.
+
 ## Next, in the order I would do it
 1. Dinis's reaction to the refresh film: v0.1 against v0.2, and whether the keys beat should return.
 2. Add to `session-refresh/document.json`: conductor.c's own refresh of 28 Nov (601,347 tokens at hand-over, about 5.4 days, its restart note of about 1,100 words; Dinis's standing rule that conductors and maestros refresh without asking, and his title rule "[being refreshed]" then "[archived]"), and this session's measured numbers from accountant.c a day after the hand-over.
