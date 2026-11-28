@@ -4,6 +4,12 @@
  "repository": "https://github.com/SovereignWebsite/Site__Agent__Studio/commits/dev/site/productions",
  "changes": [
   {
+   "commit": "536ad52",
+   "date_utc": "2026-11-28 18:08",
+   "what": "Record and send: record a film in your own browser and send it with SG/Send",
+   "detail": "Dinis Cruz, 28 Nov 2026: render on his iPad rather than here, because recording is the hand-over and the decision\nmoment, and send the file with SG/Send. On every version page the capture button is now Record and send: the\nplayer records the film in real time in the browser, shows it, then offers to send it. The sender types their own\nSG/Send access token (kept only in the tab's memory, sent only to SG/Send, never saved or sent to this site); the\nfile is encrypted in the browser and the sender gets a short code to give to c.productions. assets/sgsend.js is\naccount F's uploader, credited. _build/fetch_transfer.py fetches and decrypts a transfer from its code and prints\nonly name, size, length and SHA-256. Tested: a 300 kB file sent from the version page and fetched back, hashes equal.\nplayer.js changed: self-check reviews re-signed."
+  },
+  {
    "commit": "8284eeb",
    "date_utc": "2026-11-28 18:01",
    "what": "Agile Cells v0.6: for people who run Agile, the values sound, the practice hardened (82 s)",
@@ -356,12 +362,6 @@
    "date_utc": "2026-11-28 12:50",
    "what": "How we refresh a session v0.6: the Sovereign Website logo; briefs for a plate and a music bed",
    "detail": "- The logo Dinis Cruz chose (B, SWS, by design.c, CC BY 4.0) is copied into assets/brand/ with its source and\n  licence. The player draws a production's brand_logo at the top of every scene and a title scene's mark.\n- The player can show the AI label only on the last scene (label_end_only), as asked for the Agile film.\n- v0.6: logo on every scene and on the cover; Dinis named, as he agreed; the team scene adds the reviewers, the\n  logo's designer and the lead's change of model.\n- session-refresh/briefs.json: what account B's Higgsfield and ElevenLabs agents need (still, music bed, exact\n  length, sync points, loudness, delivery to their own vault), with the owner's words on use.\n- Reviews page: b.maestro's review, as summarised by c.maestro. player.js changed: self-check reviews re-signed."
-  },
-  {
-   "commit": "a861adc",
-   "date_utc": "2026-11-28 12:37",
-   "what": "Productions: the Higgsfield renewal trial, four tests",
-   "detail": "The four tests account B's Higgsfield agent asked to see at a public URL, so Dinis Cruz can judge\nwhether Higgsfield earns next month's renewal: opening plates, storyboard key frames, one motion\ntexture, poster frames. Every generation's cost and outcome to be recorded. Nothing is spent until\nDinis's own word on the cap. Path claimed by conductor.c (db00c23)."
   }
  ]
 }
