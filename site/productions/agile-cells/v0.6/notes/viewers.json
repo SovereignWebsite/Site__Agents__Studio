@@ -1,0 +1,128 @@
+{
+ "about": "The same five synthetic test viewers, shown v0.6 (stills and narration, through OpenRouter). Not people and not a review signature. The audience Dinis Cruz named is people who already run Agile. Em dashes in their answers are replaced by commas.",
+ "version": "v0.6",
+ "made": "2026-11-28",
+ "made_by": "c.productions-cells (an AI agent)",
+ "viewers": [
+  {
+   "viewer": "scrum-master",
+   "who": "a Scrum Master in a 300-person company that adopted a scaled Agile framework two years ago; you feel the ceremonies have grown and the values have faded. Sceptical of buzzwords.",
+   "model": "google/gemini-3.8-flash",
+   "answer": {
+    "stop_scrolling": true,
+    "why_stop": "Seeing the Agile Manifesto values and Ron Jeffries quoted catches my attention because our scaled setup has completely murdered those original principles.",
+    "watch_to_the_end": false,
+    "drop_off_second": 45,
+    "why_drop": "Scene 5 totally lost me. Saying a 'cell' can have 50 roles with its own org chart for a single task sounds like bureaucratic nightmare fuel, not Agile. Then it immediately pivots to AI bot workflows.",
+    "story_back": "It claims Agile can scale back to its original values by spinning up dynamic temporary teams of humans and AI agents to execute single tasks.",
+    "confusing": [
+     "How does a 50-role org chart for one task align with 'individuals and interactions over processes'?",
+     "Scene 6 suddenly drops an unreadable graphic about Claude session management that feels completely disconnected from scaling software teams.",
+     "Are 'cells' meant for human enterprise teams or just software API agents pretending to be a team?"
+    ],
+    "best_moment": "Scene 3 quoting Ron Jeffries on how the framework hardens and becomes dogmatic as it grows, hit painfully close to home.",
+    "one_change": "Cut the confusing Claude session slides and explain how this actually works for actual human engineering teams instead of masquerading AI prompt workflows as Agile scaling.",
+    "weakest_moment": "Scene 5 showing an org chart of 50 roles inside one temporary cell; that's literally SAFe on speed.",
+    "what_i_would_do_tomorrow": "Scroll past and roll my eyes at another consultant trying to rebrand prompt chains and agentic workflows as an Agile framework."
+   }
+  },
+  {
+   "viewer": "startup-founder",
+   "who": "a founder of a 6-person startup who uses AI coding agents daily and wonders how to organise more of them. Impatient; scrolls fast on LinkedIn.",
+   "model": "openai/gpt-5.6-luna",
+   "answer": {
+    "stop_scrolling": true,
+    "why_stop": "The opening visual makes the scaling problem obvious: one tangled network becomes multiple small cells, and the promise is directly relevant to anyone managing AI agents.",
+    "watch_to_the_end": false,
+    "drop_off_second": 9,
+    "why_drop": "The film spends too long on the 2001 Manifesto and a Ron Jeffries quote before showing how Agile Cells actually work. The repeated static manifesto frames feel like a lecture.",
+    "story_back": "Agile Cells are temporary, documented teams of humans and agents that let Agile scale by creating one small cell per task.",
+    "confusing": [
+     "It is unclear what makes a cell different from a normal small team with an agent roster.",
+     "The relationship between humans, lead agents, scene builders, critics, and test viewers is not explained operationally.",
+     "The film claims the files are readable and preserved, but never shows their contents or a concrete file layout.",
+     "The claim that a cell can have fifty roles sounds like overhead, not a benefit, without evidence.",
+     "It is unclear whether Agile Cells is a tool, a process, a file convention, or all three."
+    ],
+    "best_moment": "The concrete example of one cell producing and iterating a real film in a day, especially the transition from a small hierarchy to a fully populated cell.",
+    "one_change": "Cut the historical Manifesto section to two seconds and show the actual cell files, agent assignments, and task output within the first 15 seconds.",
+    "weakest_moment": "The extended Ron Jeffries quote over nearly identical glowing abstract graphics.",
+    "what_i_would_do_tomorrow": "Save it, then inspect the linked files or repo to see whether the cell structure is actually usable for coordinating my coding agents."
+   }
+  },
+  {
+   "viewer": "cto-buyer",
+   "who": "a CTO at a mid-sized firm who buys outsourced work (websites, CRM set-up, social media). You want to know what you could actually buy and whether it is real.",
+   "model": "google/gemini-3.8-flash",
+   "answer": {
+    "stop_scrolling": true,
+    "why_stop": "The claim of scaling Agile using multi-agent AI teams catches my attention.",
+    "watch_to_the_end": false,
+    "drop_off_second": 45,
+    "why_drop": "The concrete proof turns out to be an AI-generated video workflow rather than real software or integration work.",
+    "story_back": "Agile can scale efficiently by spinning up temporary, file-defined cells of humans and AI agents to execute single tasks.",
+    "confusing": [
+     "Whether this is a software platform, a consulting framework, or an agency pitch",
+     "How fifty agent roles coordinate on one task without massive hallucination overhead"
+    ],
+    "best_moment": "Scene 7 showing the actual structural breakdown of human lead, maestro, and sub-agents.",
+    "one_change": "Show an actual technical deliverable like an API or CRM setup instead of a slide video.",
+    "weakest_moment": "Scenes 2 and 3 wasting time quoting Agile Manifesto history.",
+    "what_i_would_do_tomorrow": "Pass on it until there is evidence of them delivering production code or enterprise systems."
+   }
+  },
+  {
+   "viewer": "agile-veteran",
+   "who": "a developer who has done Agile since 2005, read the Manifesto many times, and dislikes people misquoting it.",
+   "model": "openai/gpt-5.6-luna",
+   "answer": {
+    "stop_scrolling": true,
+    "why_stop": "The visual hook is clear and the promise is specific: a proposed way to scale Agile without abandoning its values.",
+    "watch_to_the_end": false,
+    "drop_off_second": 44,
+    "why_drop": "The 10/20/30/50-role sequence turns into org-chart theater and asserts scalability instead of showing what actually scales, what fails, or what outcome improves.",
+    "story_back": "Agile Cells are temporary, documented teams of people and agents assembled for one task and dissolved when the task is complete.",
+    "confusing": [
+     "What exactly does \"scale\" mean here: more people, more work, more agents, or larger products?",
+     "Why does adding many roles to a cell solve the coordination problem rather than recreate a hierarchy?",
+     "How are cell boundaries, ownership, dependencies, and decision rights handled?",
+     "Why is this different from a temporary project team, a pod, or a workflow documented in a repository?",
+     "The film does not explain how the Manifesto's values are preserved when agents, roles, and rules multiply."
+    ],
+    "best_moment": "The concrete example of one cell producing and revising a real film in one day, followed by the visible breakdown of lead agent, builders, critic, and test viewers.",
+    "one_change": "Replace the role-count montage with a concrete before-and-after case showing the task, cell files, decisions, iteration time, and measurable result.",
+    "weakest_moment": "The claim that a cell can contain 10, 20, 30, or 50 roles, presented as proof of scale without any evidence about coordination or results.",
+    "what_i_would_do_tomorrow": "I would inspect the cell files and the completed film, then look for evidence from multiple tasks showing that this works better than an ordinary cross-functional team."
+   }
+  },
+  {
+   "viewer": "instagram-casual",
+   "who": "someone who does not work in software, scrolling Instagram Reels in the evening, watching with sound off.",
+   "model": "google/gemini-3.8-flash",
+   "answer": {
+    "stop_scrolling": false,
+    "why_stop": "I didn't stop; it looks like a glowing corporate slide deck for IT managers that somehow leaked onto Instagram.",
+    "watch_to_the_end": false,
+    "drop_off_second": 2,
+    "why_drop": "The very first line is tech office jargon about 'Agile' and scaling, paired with abstract glowing nodes. It screams unpaid workplace training.",
+    "story_back": "A tech worker is explaining a new way to organize software teams and AI bots to do specific tasks.",
+    "confusing": [
+     "What 'Agile' actually means for a normal person",
+     "Why there is a giant yellow memo floating over a low-poly house in scene 2",
+     "What 'Claude sessions' and 're-read 86% less' have to do with anything",
+     "The org chart of random usernames like 'Dinis Cruz' and 'c.maestro'"
+    ],
+    "best_moment": "The sci-fi reactor look of the glowing hexagon in scene 3 before I noticed the boring quote.",
+    "one_change": "Make it about a relatable human problem instead of enterprise software workflows, or keep it on LinkedIn.",
+    "weakest_moment": "Scene 2, which is literally just a massive yellow text block dumped on the screen like a PowerPoint slide.",
+    "what_i_would_do_tomorrow": "Swipe up immediately to find something entertaining."
+   }
+  }
+ ],
+ "what_they_agree_on": [
+  "The Agile audience stays longer: the scrum master, the buyer and the agile veteran to 44 to 45 seconds (v0.5: 38 to 42); none finishes (the veteran did in v0.5).",
+  "Empathy lands: the scrum master names the Jeffries scene the best moment ('hit painfully close to home').",
+  "Still named weakest: the 50-role chart (Dinis's own message), and the Manifesto page for viewers outside Agile. The founder finds the Jeffries quote long over a slow picture.",
+  "The two viewers outside Agile leave early (2 and 9 seconds); they are not the audience Dinis named."
+ ]
+}

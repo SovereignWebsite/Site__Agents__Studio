@@ -329,6 +329,16 @@
    "status": "in agile-history v0.5",
    "batch": 11,
    "outside": true
+  },
+  {
+   "n": 29,
+   "role": "Scene-smith",
+   "job": "Agile Cells: the values are sound, the practice hardens (for c.productions-cells)",
+   "result": "lab/cells-sound, four rounds",
+   "minutes": 6,
+   "tool_uses": 29,
+   "status": "in agile-cells v0.6",
+   "batch": 12
   }
  ],
  "working_now": 0,
@@ -344,6 +354,7 @@
   "28 Nov, 15:50: the refresh film's opening and the agile cell",
   "28 Nov, 16:20: the Agile Cells film, first loop (helper session c.productions-cells)",
   "28 Nov, 17:10: the Agile Cells film's opening and closing (helper session c.productions-cells)",
-  "28 Nov, 15:45: the Agile film to MP4, SG/Send and Buffer (a helper session)"
+  "28 Nov, 15:45: the Agile film to MP4, SG/Send and Buffer (a helper session)",
+  "28 Nov, 17:55: the Agile Cells film re-centred on people who run Agile (helper session c.productions-cells)"
  ]
 }

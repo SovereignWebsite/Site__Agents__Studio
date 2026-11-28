@@ -1,0 +1,176 @@
+{
+ "production": "agile-cells",
+ "version": "v0.6",
+ "made": "2026-11-28",
+ "how": "Player frames taken in headless Chromium (software GL) at 30%, 60% and 93% of each scene.",
+ "frames": [
+  {
+   "scene": "intro",
+   "n": 1,
+   "k": 1,
+   "t": 2.1,
+   "file": "01-intro-1.png"
+  },
+  {
+   "scene": "intro",
+   "n": 1,
+   "k": 2,
+   "t": 4.2,
+   "file": "01-intro-2.png"
+  },
+  {
+   "scene": "intro",
+   "n": 1,
+   "k": 3,
+   "t": 6.5,
+   "file": "01-intro-3.png"
+  },
+  {
+   "scene": "values",
+   "n": 2,
+   "k": 1,
+   "t": 9.5,
+   "file": "02-values-1.png"
+  },
+  {
+   "scene": "values",
+   "n": 2,
+   "k": 2,
+   "t": 12.1,
+   "file": "02-values-2.png"
+  },
+  {
+   "scene": "values",
+   "n": 2,
+   "k": 3,
+   "t": 14.8,
+   "file": "02-values-3.png"
+  },
+  {
+   "scene": "sound",
+   "n": 3,
+   "k": 1,
+   "t": 20.2,
+   "file": "03-sound-1.png"
+  },
+  {
+   "scene": "sound",
+   "n": 3,
+   "k": 2,
+   "t": 25,
+   "file": "03-sound-2.png"
+  },
+  {
+   "scene": "sound",
+   "n": 3,
+   "k": 3,
+   "t": 30.2,
+   "file": "03-sound-3.png"
+  },
+  {
+   "scene": "cell",
+   "n": 4,
+   "k": 1,
+   "t": 35.2,
+   "file": "04-cell-1.png"
+  },
+  {
+   "scene": "cell",
+   "n": 4,
+   "k": 2,
+   "t": 39.1,
+   "file": "04-cell-2.png"
+  },
+  {
+   "scene": "cell",
+   "n": 4,
+   "k": 3,
+   "t": 43.3,
+   "file": "04-cell-3.png"
+  },
+  {
+   "scene": "scale",
+   "n": 5,
+   "k": 1,
+   "t": 46.9,
+   "file": "05-scale-1.png"
+  },
+  {
+   "scene": "scale",
+   "n": 5,
+   "k": 2,
+   "t": 49.7,
+   "file": "05-scale-2.png"
+  },
+  {
+   "scene": "scale",
+   "n": 5,
+   "k": 3,
+   "t": 52.7,
+   "file": "05-scale-3.png"
+  },
+  {
+   "scene": "made",
+   "n": 6,
+   "k": 1,
+   "t": 56.4,
+   "file": "06-made-1.png"
+  },
+  {
+   "scene": "made",
+   "n": 6,
+   "k": 2,
+   "t": 59.6,
+   "file": "06-made-2.png"
+  },
+  {
+   "scene": "made",
+   "n": 6,
+   "k": 3,
+   "t": 63,
+   "file": "06-made-3.png"
+  },
+  {
+   "scene": "proof",
+   "n": 7,
+   "k": 1,
+   "t": 66.2,
+   "file": "07-proof-1.png"
+  },
+  {
+   "scene": "proof",
+   "n": 7,
+   "k": 2,
+   "t": 68.7,
+   "file": "07-proof-2.png"
+  },
+  {
+   "scene": "proof",
+   "n": 7,
+   "k": 3,
+   "t": 71.4,
+   "file": "07-proof-3.png"
+  },
+  {
+   "scene": "close",
+   "n": 8,
+   "k": 1,
+   "t": 75,
+   "file": "08-close-1.png"
+  },
+  {
+   "scene": "close",
+   "n": 8,
+   "k": 2,
+   "t": 78,
+   "file": "08-close-2.png"
+  },
+  {
+   "scene": "close",
+   "n": 8,
+   "k": 3,
+   "t": 81.3,
+   "file": "08-close-3.png"
+  }
+ ]
+}

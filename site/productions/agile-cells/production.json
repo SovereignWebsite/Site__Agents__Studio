@@ -41,13 +41,19 @@
    "date": "2026-11-28",
    "status": "review",
    "notes": "From Dinis Cruz's feedback on v0.3 and v0.4: an opening that states the proposition before any explanation (Martin Fowler's 2018 words on what Agile became, quoted exactly and credited, then lab/cells-intro: a team strains as it grows and splits into cells, 'Agile Cells: the early values, at scale', and an agenda of what is coming); the proof as the punchline ('here is Agile working'); a closing that consolidates (lab/cells-close: cells built, working and folded onto shelves of files under Agile Cells and sovereignwebsite.org). 74 s. Already fixed in v0.4 before his note: the vertical cells out, the web address on the end card."
+  },
+  {
+   "version": "v0.6",
+   "date": "2026-11-28",
+   "status": "review",
+   "notes": "From Dinis Cruz's feedback on v0.5: speaks to people who already run Agile, with empathy. Opens on the team's proposition, 'Agile is great. But it struggles to scale. Now we have a way to make it scale: Agile Cells' (the Fowler line is gone); the four values; Ron Jeffries's 2018 words that the values still offer the best way he knows, exactly quoted and credited, over a new scene (lab/cells-sound: the values stay lit while a hard shell grows round them), 'what hardens, as it grows, is the word, and the way it is run'; then the cell, the scale, the real film and the close. 82 s."
   }
  ],
  "rules": "Storyboard before any scene. Same house look as the studio's lab scenes; agents are lights, never figures. Every claim on screen or in the voice has a public source; the four values are quoted exactly from agilemanifesto.org. One AI voice, labelled on the last scene. 60 to 90 seconds. Vertical first. Nothing is published before Dinis Cruz signs the exact version.",
  "storyboard": "storyboard.json, first pass 28 November 2026 by c.productions-cells",
  "format": "Vertical, 720 by 1280, for agilecells.org and social media.",
- "summary": "What an agile cell is and why Agile can scale and keep its first four values: a vertical film of about 74 seconds, drawn with WebGL in your browser, ending on the real cell of people and agents that made How we refresh a session, with a voice made by AI.",
- "status_note": "Version v0.5 follows Dinis Cruz's feedback on v0.3 and v0.4. Nobody has signed it. Nothing is published anywhere. agilecells.org did not answer on 28 November 2026; what the film says about a cell comes from the seed pages in the AgileCells and AgentiCCells repositories.",
+ "summary": "What an agile cell is and why Agile can scale and keep its first four values: a vertical film of about 82 seconds, drawn with WebGL in your browser, ending on the real cell of people and agents that made How we refresh a session, with a voice made by AI.",
+ "status_note": "Version v0.6 follows Dinis Cruz's feedback on v0.5. Nobody has signed it. Nothing is published anywhere. agilecells.org did not answer on 28 November 2026; what the film says about a cell comes from the seed pages in the AgileCells and AgentiCCells repositories.",
  "links": [
   {
    "label": "The storyboard (data)",
