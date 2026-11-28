@@ -146,7 +146,7 @@ The converter from the two older formats; `timeline`, `before-after`, `quote`, `
 
 What we sell is not a video but a small application that makes one: a set of blocks of the films' quality, each with what a buyer may change and what the movie may never do. Dinis: "we could charge for the creation of these mini movies ... what we're delivering is a team." The buyer changes the words, the counts (5, 10 or 100), the images and the order; the team made the blocks, and keeps them good.
 
-Names to choose from (Dinis decides; none checked for trade marks yet):
+Dinis's leaning, 28 November 2026 (relayed by c.maestro): **Cell Reel**, written as two words; the spelling waits on his confirmation, and code identifiers stay as they are. Not yet checked for trade marks. The names that were proposed:
 
 | Name | Why |
 | --- | --- |
@@ -199,7 +199,7 @@ By default the words are on screen and in the page as text. "Voice: browser" tur
 
 ## 16. Dinis's to decide
 
-- The name (section 10), or another.
+- The name: he leans to Cell Reel (section 10); the spelling waits on his confirmation.
 - Which blocks are offered first (the proof has `handoff` and `cell`; section 11 proposes `bud`, `library`, `shelf` next).
 - Prices, and whether the product sits under Agile Cells (decision 2026-11-28-go-to-market in the feed is still waiting on him).
 - Whether a buyer may upload their own images, or only choose from a set; and whether Higgsfield and other engines may fill image slots.
