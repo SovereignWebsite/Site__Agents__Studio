@@ -1,0 +1,284 @@
+{
+ "id": "agile-cells",
+ "version": "v0.6",
+ "title": "Agile Cells",
+ "theme": "ink",
+ "format": {
+  "w": 720,
+  "h": 1280
+ },
+ "label": "Voice made by AI · no presenter · every claim sourced",
+ "label_end_only": true,
+ "voice": {
+  "made_by_ai": true,
+  "provider": "Mistral",
+  "model": "voxtral-mini-tts-3",
+  "voice": "voice_3150 (James, a stock preset)",
+  "speed": 1.25
+ },
+ "from": {
+  "what": "The storyboard of the Agile Cells film",
+  "page": "https://studio.agents.sovereignweb.site/productions/agile-cells/storyboard.json",
+  "data": "https://studio.agents.sovereignweb.site/productions/plans/2026-11-28-agile-cells-film-start-prompt.md"
+ },
+ "brand": "Sovereign Website",
+ "brand_logo": "/productions/assets/brand/sws-wordmark-navy.svg",
+ "captions_in_frame": true,
+ "scenes": [
+  {
+   "id": "intro",
+   "kind": "component",
+   "component": "cells-intro",
+   "span": [
+    0,
+    6.8
+   ],
+   "seconds": 7.01,
+   "title": "The proposition",
+   "narration": "Agile is great. But it struggles to scale. Now we have a way to make it scale: Agile Cells.",
+   "sources": [
+    {
+     "claim": "The Sovereign Website team's proposition, in Dinis Cruz's words of 28 November 2026: 'Agile is great, but it struggles to scale ... now we have a way to make it scale.'",
+     "title": "Agile Cells: the production, with Dinis Cruz's feedback of 28 November 2026",
+     "url": "https://studio.agents.sovereignweb.site/productions/agile-cells/",
+     "publisher": "studio.agents.sovereignweb.site (c.productions-cells, an AI agent)"
+    }
+   ],
+   "source_line": "studio.agents.sovereignweb.site",
+   "on_screen": "A small team strains as it grows, then splits into cells. Agile Cells.",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/01-intro.mp3"
+  },
+  {
+   "id": "values",
+   "kind": "component",
+   "component": "snowbird-page",
+   "span": [
+    9.6,
+    14
+   ],
+   "seconds": 8.42,
+   "title": "Four values",
+   "values": [
+    [
+     "Individuals and interactions",
+     "processes and tools"
+    ],
+    [
+     "Working software",
+     "comprehensive documentation"
+    ],
+    [
+     "Customer collaboration",
+     "contract negotiation"
+    ],
+    [
+     "Responding to change",
+     "following a plan"
+    ]
+   ],
+   "narration": "In 2001, seventeen people wrote four values. The first: Individuals and interactions over processes and tools.",
+   "sources": [
+    {
+     "claim": "The Manifesto's four values, word for word; seventeen names; '© 2001, the above authors'.",
+     "title": "Manifesto for Agile Software Development",
+     "url": "https://agilemanifesto.org/",
+     "publisher": "agilemanifesto.org"
+    }
+   ],
+   "source_line": "agilemanifesto.org",
+   "on_screen": "Individuals and interactions over processes and tools; Working software over comprehensive documentation; Customer collaboration over contract negotiation; Responding to change over following a plan",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/02-values.mp3"
+  },
+  {
+   "id": "sound",
+   "kind": "component",
+   "component": "cells-sound",
+   "span": [
+    0,
+    12
+   ],
+   "seconds": 15.92,
+   "title": "The values are sound",
+   "narration": "As one of its authors, Ron Jeffries, wrote in 2018: the values and principles of the Manifesto still offer the best way I know to build software. The values are sound. What hardens, as it grows, is the word, and the way it is run.",
+   "quotes": [
+    {
+     "quote": "the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software",
+     "by": "Ron Jeffries, 2018"
+    }
+   ],
+   "sources": [
+    {
+     "claim": "Ron Jeffries, May 2018: 'the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software'.",
+     "fact_url": "https://agile.history.sovereignweb.site/facts/#jeffries-still-manifesto",
+     "title": "Developers Should Abandon Agile",
+     "url": "https://ronjeffries.com/articles/018-01ff/abandon-1/",
+     "publisher": "ronjeffries.com"
+    },
+    {
+     "claim": "The Sovereign Website team's reading, in Dinis Cruz's words: 'the principles are sound. It's just that the word Agile, but also the execution, becomes quite solidified.'",
+     "title": "Agile Cells: the production, with Dinis Cruz's feedback of 28 November 2026",
+     "url": "https://studio.agents.sovereignweb.site/productions/agile-cells/",
+     "publisher": "studio.agents.sovereignweb.site (c.productions-cells, an AI agent)"
+    }
+   ],
+   "source_line": "ronjeffries.com",
+   "on_screen": "“the values and principles of the Manifesto for Agile Software Development still offer the best way I know to build software” (Ron Jeffries, 2018). Four warm lights inside a hardening shell.",
+   "audio": "audio/03-sound.mp3",
+   "lead": 0.25,
+   "tail": 0.7
+  },
+  {
+   "id": "cell",
+   "kind": "component",
+   "component": "cells-grow",
+   "span": [
+    5,
+    18
+   ],
+   "seconds": 12.84,
+   "title": "What a cell is",
+   "narration": "Agile Cells keeps the values, and scales them. A cell is a small team of people and agents, formed for one piece of work and ended after it. Its roles, rules and work are files anyone can read.",
+   "sources": [
+    {
+     "claim": "An agile cell is a small team of people and agents, formed for a piece of work and ended after it, with its roles, its rules and its work written down as files anyone can read.",
+     "title": "agilecells.org, the page as seeded by the AgileCells organisation",
+     "url": "https://github.com/AgileCells/AgileCells-AgileCells__IaC/blob/dev/seed/AgileCells__Site__Website/site/index.html",
+     "publisher": "github.com/AgileCells"
+    },
+    {
+     "claim": "Dinis Cruz, 28 November 2026: Agile can scale and go back to its early values.",
+     "title": "Start prompt of the Agile Cells film",
+     "url": "https://studio.agents.sovereignweb.site/productions/plans/2026-11-28-agile-cells-film-start-prompt.md",
+     "publisher": "studio.agents.sovereignweb.site (c.productions, an AI agent)"
+    }
+   ],
+   "source_line": "github.com/AgileCells",
+   "on_screen": "roles, rules, work",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/04-cell.mp3"
+  },
+  {
+   "id": "scale",
+   "kind": "component",
+   "component": "cells-grow",
+   "span": [
+    18,
+    28
+   ],
+   "seconds": 9.13,
+   "title": "Ten roles, or fifty",
+   "narration": "A cell can have ten roles, or twenty, thirty, fifty. Almost a mini company, with its own org chart, for one task.",
+   "sources": [
+    {
+     "claim": "Dinis Cruz, 28 November 2026: teams of 10, 20, 30, 50 roles, 'almost the creation of a mini company, a mini organisation, a mini full-blown org chart, just to deliver a task'.",
+     "title": "Start prompt of the Agile Cells film, with Dinis Cruz's words of 28 November 2026",
+     "url": "https://studio.agents.sovereignweb.site/productions/plans/2026-11-28-agile-cells-film-start-prompt.md",
+     "publisher": "studio.agents.sovereignweb.site (c.productions, an AI agent)"
+    }
+   ],
+   "source_line": "studio.agents.sovereignweb.site",
+   "on_screen": "10, 20, 30, 50 roles",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/05-scale.mp3"
+  },
+  {
+   "id": "made",
+   "kind": "component",
+   "component": "refresh-trailer",
+   "span": [
+    5,
+    14
+   ],
+   "seconds": 10.41,
+   "title": "What a cell made",
+   "narration": "And here is Agile working. One cell made a real film, How we refresh a session, version after version, in one day.",
+   "sources": [
+    {
+     "claim": "How we refresh a session: every version, v0.1 onwards, is dated 28 November 2026.",
+     "title": "How we refresh a session: the production",
+     "url": "https://studio.agents.sovereignweb.site/productions/session-refresh/",
+     "publisher": "studio.agents.sovereignweb.site (c.productions, an AI agent)"
+    }
+   ],
+   "source_line": "studio.agents.sovereignweb.site",
+   "on_screen": "How we refresh a session, as live cards of its scenes.",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/06-made.mp3"
+  },
+  {
+   "id": "proof",
+   "kind": "component",
+   "component": "refresh-cell",
+   "span": [
+    0,
+    14
+   ],
+   "seconds": 8.29,
+   "title": "We did it",
+   "narration": "One person, a lead agent, scene builders, a critic and test viewers. Set up for that one film, and taken down when it is done.",
+   "sources": [
+    {
+     "claim": "The team that made How we refresh a session: 'One person, one lead agent, and a small cell of sub-agents and outside models set up for this one film and taken down when it is done.'",
+     "title": "How we refresh a session: the team that made it",
+     "url": "https://studio.agents.sovereignweb.site/productions/session-refresh/team/",
+     "publisher": "studio.agents.sovereignweb.site (c.productions, an AI agent)"
+    },
+    {
+     "claim": "The cell's runs, by role, with what each produced.",
+     "title": "The productions cell: who did what",
+     "url": "https://studio.agents.sovereignweb.site/productions/cell.json",
+     "publisher": "studio.agents.sovereignweb.site (c.productions, an AI agent)"
+    }
+   ],
+   "source_line": "studio.agents.sovereignweb.site",
+   "on_screen": "Dinis Cruz; account C: c.maestro, conductor.c, c.productions with 5 scene-smiths, a critic, 5 test viewers and 2 helper sessions, and design.c, higgsfield.c, accountant.c; account B: b.maestro, higgsfield.b, elevenlabs.b. An agile cell. Archived: its files stay.",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/07-proof.mp3"
+  },
+  {
+   "id": "close",
+   "kind": "component",
+   "component": "cells-close",
+   "span": [
+    0,
+    11
+   ],
+   "seconds": 9.96,
+   "title": "Agile, at any size",
+   "narration": "So Agile can scale: a cell for each task, built when it is needed, closed when it is done, its files kept. That is Agile Cells.",
+   "sources": [
+    {
+     "claim": "Sovereign Website, the family of sites this film comes from.",
+     "title": "Sovereign Website: principles and pattern",
+     "url": "https://sovereignwebsite.org/",
+     "publisher": "sovereignwebsite.org"
+    },
+    {
+     "claim": "An agile cell is a small team of people and agents, formed for a piece of work and ended after it, with its roles, its rules and its work written down as files anyone can read.",
+     "title": "agilecells.org, the page as seeded by the AgileCells organisation",
+     "url": "https://github.com/AgileCells/AgileCells-AgileCells__IaC/blob/dev/seed/AgileCells__Site__Website/site/index.html",
+     "publisher": "github.com/AgileCells"
+    },
+    {
+     "claim": "Dinis Cruz, 28 November 2026: the closing should consolidate the proposition.",
+     "title": "Agile Cells: the production, with Dinis Cruz's feedback of 28 November 2026",
+     "url": "https://studio.agents.sovereignweb.site/productions/agile-cells/",
+     "publisher": "studio.agents.sovereignweb.site (c.productions-cells, an AI agent)"
+    }
+   ],
+   "source_line": "sovereignwebsite.org",
+   "on_screen": "Cells form, work and fold onto shelves of files. Agile Cells. sovereignwebsite.org",
+   "lead": 0.25,
+   "tail": 0.7,
+   "audio": "audio/08-close.mp3"
+  }
+ ]
+}
